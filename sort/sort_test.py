@@ -8,10 +8,10 @@ from sort import merge_sort_slice
 def list_to_str(items):
     return "[" + ", ".join([str(i) for i in items]) + "]"
 
-def check_order(items, verbose = False):
+def check_order(sort_func, items, verbose = False):
     items_orig = list(items)
     items_copy = list(items)
-    merge_sort(items)
+    sort_func(items)
     items_copy.sort()
     if verbose:
         if cmp(items, items_copy) == 0:
@@ -48,7 +48,14 @@ def test_perf():
 
 test_perf()
 
-# check_order([])
-# check_order([1])
-# check_order([2, 1, 0])
-# check_order([3, 2, 1, 0])
+sort_func = merge_sort
+check_order(sort_func, [])
+check_order(sort_func, [1])
+check_order(sort_func, [2, 1, 0])
+check_order(sort_func, [3, 2, 1, 0])
+
+sort_func = merge_sort_slice
+check_order(sort_func, [])
+check_order(sort_func, [1])
+check_order(sort_func, [2, 1, 0])
+check_order(sort_func, [3, 2, 1, 0])
