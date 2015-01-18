@@ -39,7 +39,7 @@ def merge_impl(items, helper, start, mid, end):
         rightStart += 1
 
     cnt = len(helper)
-    for i in range(0, cnt):
+    for i in xrange(0, cnt):
         items[start + i] = helper[i]
 
     del helper[:]
