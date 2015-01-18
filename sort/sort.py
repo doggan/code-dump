@@ -15,9 +15,9 @@ def merge_sort_impl(items, helper, start, end):
     mid = (end - start) / 2 + start
     merge_sort_impl(items, helper, start, mid)
     merge_sort_impl(items, helper, mid, end)
-    merge(items, helper, start, mid, end)
+    merge_impl(items, helper, start, mid, end)
 
-def merge(items, helper, start, mid, end):
+def merge_impl(items, helper, start, mid, end):
     leftStart = start
     leftEnd = mid
     rightStart = mid
@@ -60,9 +60,9 @@ def merge_sort_slice_impl(items):
     rightHalf = items[mid:]
     merge_sort_slice_impl(leftHalf)
     merge_sort_slice_impl(rightHalf)
-    merge_slice(items, leftHalf, rightHalf)
+    merge_slice_impl(items, leftHalf, rightHalf)
 
-def merge_slice(items, leftHalf, rightHalf):
+def merge_slice_impl(items, leftHalf, rightHalf):
     leftCnt = 0
     rightCnt = 0
     cnt = 0
