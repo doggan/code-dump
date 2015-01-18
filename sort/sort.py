@@ -1,6 +1,8 @@
 #!/path/to/python
 
 def merge_sort(items):
+    """Merge sort using a single buffer as intermediate storage.
+    """
     if items is None:
         return
 
@@ -41,3 +43,43 @@ def merge(items, helper, start, mid, end):
         items[start + i] = helper[i]
 
     del helper[:]
+
+def merge_sort_slice(items):
+    """Merge sort using list slicing.
+    """
+    if items is None:
+        return
+
+    merge_sort_slice_impl(items)
+
+def merge_sort_slice_impl(items):
+    if len(items) <= 1:
+        return
+    mid = len(items) / 2
+    leftHalf = items[:mid]
+    rightHalf = items[mid:]
+    merge_sort_slice_impl(leftHalf)
+    merge_sort_slice_impl(rightHalf)
+    merge_slice(items, leftHalf, rightHalf)
+
+def merge_slice(items, leftHalf, rightHalf):
+    leftCnt = 0
+    rightCnt = 0
+    cnt = 0
+    while leftCnt < len(leftHalf) and rightCnt < len(rightHalf):
+        if leftHalf[leftCnt] < rightHalf[rightCnt]:
+            items[cnt] = leftHalf[leftCnt]
+            leftCnt += 1
+        else:
+            items[cnt] = rightHalf[rightCnt]
+            rightCnt += 1
+        cnt +=1
+
+    while leftCnt < len(leftHalf):
+        items[cnt] = leftHalf[leftCnt]
+        leftCnt += 1
+        cnt += 1
+    while rightCnt < len(rightHalf):
+        items[cnt] = rightHalf[rightCnt]
+        rightCnt += 1
+        cnt += 1
