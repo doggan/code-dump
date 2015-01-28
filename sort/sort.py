@@ -1,5 +1,3 @@
-#!/path/to/python
-
 def merge_sort(items):
     """Merge sort using a single buffer as intermediate storage.
     """
