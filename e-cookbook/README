@@ -1,0 +1,38 @@
+E-Cookbook
+----------
+
+E-Cookbook Copyright (C) 2006 Shyam "Doggan" Guthikonda.
+
+Email: shyamguth@gmail.com
+URL: http://shy.am
+
+Project Page: http://sourceforge.net/projects/ecookbook
+
+E-Cookbook is an electronc recipe organizer, with support for and Mac OS X and Windows platforms.
+It is written in Python, using wxPython and PySqlite.
+
+Dependencies
+------------
+wxPython
+PySqlite
+
+Getting Started
+---------------
+To run E-cookbook from source, run mainWindow.py
+
+Bugs
+-------------
+Windows -> Mac DB Failure:
+.cb files created on Windows fail to open on OS X.
+cur.execute("select * from " + gTableName) throws
+sqlite.OperationalError.
+Mac to Windows databases work fine. o_O
+
+Can't save ingredient containing ´
+(UTF-8 issues): Added the ingredient "Oxfilé" to a new recipie. The new ingredient didn't show in the list of ingredients, and after a I closed the recipie I could not open it again.
+
+Feature Requests
+-------------
+Web Download:
+It would be nice if there was the ability to import
+recipes from popular recipe sites such as foodnetwork.com

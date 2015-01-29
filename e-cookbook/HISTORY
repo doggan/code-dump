@@ -1,0 +1,16 @@
+E-Cookbook Version Changes
+--------------------------
+
+  Future Plans:
+  --------------------------------------
+    - "What to make?!"-Dialog
+       - A dialog that allows certain criteria to be set (category, etc). When a 'Random' button is pressed, a random recipe matching
+         the set criteria is selected and open in the View Dialog.
+    - "What can I make?!"-Dialog
+       - The user can enter the ingredients they currently have. They are then presented with all of the possible recipes that
+         they can make without going to the store.
+
+
+  Version 1.00 Beta 1        05-Jul-2006
+  --------------------------------------
+    - Original beta version

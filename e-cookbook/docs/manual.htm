@@ -1,0 +1,122 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<head>
+    <title>E-Cookbook User Manual :: Version 1.0</title>
+    <style type="text/css">
+    body {
+    margin-left: 5%;
+    margin-right: 5%;
+    font-family: Verdana, sans-serif;
+    }
+
+    h1,h2,h3 {
+    margin-left: -3%;
+    margin-top : 5px;
+    margin-bottom : 5px;
+    background-color: rgb(204,204,255);
+    color: black;
+    }
+    </style>
+</head>
+
+<body>
+<a id="top">
+<div align="center">  
+  <h1>E-Cookbook User Manual</h1>
+  <p><em>Version: 1.0</em
+></p>
+  <p><em>Author: Shyam &quot;Doggan&quot; Guthikonda</em><br>
+  <em>Email:</em> <a href="mailto:shyamguth@gmail.com">shyamguth@gmail.com</a><br>
+  <em>Personal Website: <a href="http://shy.am" target="_Blank">http://shy.am</a></em><br>
+  <em>Project Website: <a href="http://sourceforge.net/projects/ecookbook" target="_Blank">http://sourceforge.net/projects/ecookbook</a></em></p>
+</div>
+<div align="left">
+<ul>
+   <li><a href="#about">About</a>
+     <ul>
+         <li><a href="#about.intro">Introduction</a></li>
+         <li><a href="#about.features">Features</a></li>
+         <li><a href="#about.tech">Technical Notes </a></li>
+      </ul>
+	</li>
+	<li><a href="#tutorial">Tutorials</a><ul>
+	  <li><a href="#tutorial.general">General Notes </a></li>
+        <li><a href="#tutorial.start">Getting Started</a></li>
+        <li><a href="#tutorial.view">View Recipe</a></li>
+        <li><a href="#tutorial.search">Searching</a></li>
+      </ul>
+   </li>
+	<li><a href="#credits">Credits</a>
+   </li>
+</ul>
+<h3><a id="about">About</a></h3>
+
+   <h4><a id="about.intro">Introduction</a></h4>
+        <p>E-Cookbook is an electronic cookbook, or recipe organizer, with a principle design goal of ease-of-use. It allows the user to create and maintain recipes that can be searched and sorted through. All recipes are saved out to a single file, which allows the user to easily backup their recipe collection.</p>
+        <p>Ideally, this application can replace the old tattered cookbook in your kitchen.</p>
+		<h4><a id="about.features">Features</a></h4>
+        <p>Here are some of the features of E-Cookbook: </p>
+        
+        <ul>
+            <li>Cross-Platform
+              <ul>
+                  <li>Windows and Mac OS X supported by the developer</li>
+              </ul>
+            </li>
+            <li>Easy to use interface</li>
+            <li>Multiply ingredient amounts to any number of servings </li>
+            <li>Search through your recipes using your own custom filters </li>
+            <li>Sort recipes by any category </li>
+            <li>View/Print recipes in a nicely formatted manner</li>
+            <li>*Select a random recipe (Answers the common question: 'What to make for dinner?!')</li>
+            <li>*Find a recipe for the items you have in your refrigerator</li>
+        </ul>  
+		<em>* - Denotes a feature in a future release</em></p>
+		<h4><a id="about.tech">Technical Notes</a></h4>
+        <p>This software was written in Python. The user interface is written in <a href="http://www.wxpython.org/" target="_Blank">wxPython</a>. The database backend utilizes <a href="http://initd.org/tracker/pysqlite" target="_Blank">PySqlite</a>. It has been tested primarily on Windows 98/2000/XP and Mac OS X, although it should work on all platforms that provide a Python interpreter.</p>
+        <p>E-Cookbook is free software released under the GPL. A copy has been provided (see: 'COPYING').</p>
+        <p>If you find a bug (or 'feature'), please report it to the Sourceforge project page (link at top).</p>
+        <p>If you find this software useful, please let me know! (email at top). Or if you really find it useful, donations are accepted through the Sourceforge project page. </p>
+        <p><a href="#top">To the top.</a></p>
+        <h3><a id="tutorial">Tutorials</a></h3>
+
+   <h4><a id="tutorial.general">General Notes </a></h4>
+        <p><em><u>Remember to save your work often</u></em>. You can save your cookbook at any time by going to the menu and selecting <strong>File &gt; Save Cookbook</strong>.</p>
+        <p>Cookbooks are stored in a single file with a <strong>.cb</strong> extension. You can make copies of these files to back up your data. You can open an already created cookbook at a later time through the menu: <strong>File &gt; Open Cookbook</strong>.</p>
+        <h4><a id="tutorial.start">Getting Started </a></h4>
+        <p>When you first open E-Cookbook, you are presented with a blank slate. The first thing you must do is create a cookbook to store your recipes in. Go to the menu. Select <strong>File &gt; New Cookbook</strong>.</p>
+        <p>Now that a cookbook has been created, you can add new recipes. <strong>Click &quot;Add Recipe&quot;</strong>. This opens the &quot;Add New Recipe&quot; dialog:</p>
+        <p align="center"><img src="images/addDialog.png" width="650" height="450"></p>
+        <p>This dialog is split into 4 different tabs, which can be navigated to by clicking the tabs at the top of the window. The tab names are self explanatory.</p>
+        <p>On the &quot;Description&quot; tab, you can fill in all your recipes' fields. For the <strong>Category</strong> and <strong>Cuisine</strong> fields, default values are provided in a drop-down list. If you want to enter your own custom value, simply type it into the text field and press enter. This will make that value available in the drop-down list for any future item.</p>
+        <p>The next tab is &quot;Ingredients&quot;. Again, the fields are self explanatory. For the <strong>Amount</strong> value, there are three boxes. These correspond to, from left to right, the whole number, numerator, and denominator of a mixed fraction of the form: 3 5/8. The following image shows how to enter a non-fractional value: </p>
+        <p align="center"><img src="images/addIng.png" width="326" height="237"></p>
+        <p align="left">Once your ingredient properties are set, <strong>click Ok</strong>. You can add as many ingredients as you want. After an ingredient has been added, it will appear in the list view (shown below). List views are seen throughout this application to display information. They all behave in the same manner. To sort the items in the list view, <strong>click the column header</strong> (i.e. Name, Amt., Units, etc.).</p>
+        <p align="center"><img src="images/ingList.png" width="650" height="450"> </p>
+        <p align="left">You are now free to modify or delete ingredients. To modify, simply <strong>click an ingredient</strong> so that it is highlighted in the list view, and then <strong>click &quot;Modify Ingredient&quot;</strong>. This will bring up the same dialog as seen earlier, but with the fields already filled in with the existing values. </p>
+        <p align="left">Ingredients can also be deleted. <strong>Select</strong> all the ingredients to be deleted, and <strong>click &quot;Delete Ingredient&quot;</strong>. You will be prompted with a confirmation box asking if you are sure you want to continue with the deletion process.</p>
+        <p align="left">The &quot;Instructions&quot; and &quot;Extra Notes&quot; tabs are just text fields. Add whatever information you see fit here.</p>
+        <p align="left"><strong>Click Ok</strong> to keep this newly added recipe. The recipe will now display in the main list view. You can now add/modify/delete recipes using the buttons on the left. They behave in exactly the same way as adding/modifying/deleting ingredients.</p>
+        <h4><a id="tutorial.view">View Recipe </a></h4>
+        <p>Once a recipe has been added, you can view it. <strong>Select</strong> the recipe you want to view, and <strong>Click &quot;View Recipe&quot;</strong>. This opens the &quot;View Recipe&quot; dialog. This dialog shows all the information you have already entered in a read-only fashion (i.e. you can't edit anything from here).</p>
+        <p>There is <em>one</em> thing you can edit, though: <strong>Servings</strong>. If the number of servings was entered in the &quot;Add/Modify Recipe&quot; dialog, you can now scale that number of servings here. By changing the number of servings, the ingredient amounts will also be multiplied. You can <strong>click the &quot;Reset Servings&quot;</strong> button to reset the servings # to the original value. If you never entered the amount of servings for the given recipe (i.e. Servings = 0), this field will be grayed out.</p>
+        <p align="center"><img src="images/viewDialog.png" width="561" height="631"> </p>
+        <p align="left">Lastly on this dialog, you can <strong>Print</strong> or <strong>Print Preview</strong> the recipe by clicking on the buttons at the bottom of the dialog. Printing  the recipe formats it in a nice manner, giving you a paper copy to be used as a quick reference. </p>
+        <h4><a id="tutorial.search">Searching</a></h4>
+        <p>Searching can be performed in the main dialog. Simply enter a keyword (filter) and select the field you wish to apply this filter to. As you type, the matching entries will be displayed in the list view. Perhaps the most useful category is search by &quot;Ingredient Name&quot;. If you have some chicken you need to use up, enter &quot;chicken&quot; in the text field and &quot;Ingredient Name&quot; in the drop-down category field. All recipes that use chicken as an ingredient will be displayed.</p>
+        <p>Clear the searching criteria with the &quot;Clear Search&quot; button. Perform a &quot;Case Sensitive&quot; search by checking the check-box (off by default). </p>
+  <p><a href="#top">To the top.</a></p>
+  
+<h3><a id="credits">Credits</a></h3>
+
+   <p><strong>Lead Developer:</strong> Shyam &quot;Doggan&quot; Guthikonda</p>
+   <p><strong>Email: </strong><a href="mailto:shyamguth@gmail.com">shyamguth@gmail.com</a></p>
+   <p><strong>Website:</strong> <em><a href="http://shy.am" target="_Blank">http://shy.am</a></em></p>
+   <p>E-Cookbook was written for two reason: 1). I wanted to learn Python. 2). My mom mentioned how she wished she could organize her recipes better. As I worked on it, I realized that some people might find it useful, so I released it under the GPL through Sourceforge, and voila. </p>
+   <p><a href="#top">To the top.</a></p>
+</div>
+</body>
+</html>
