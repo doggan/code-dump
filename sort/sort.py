@@ -81,3 +81,30 @@ def merge_slice_impl(items, leftHalf, rightHalf):
         items[cnt] = rightHalf[rightCnt]
         rightCnt += 1
         cnt += 1
+
+def quick_sort(items):
+    """Basic quicksort algorithm.
+    """
+    quick_sort_impl(items, 0, len(items) - 1)
+
+def quick_sort_impl(items, start, end):
+    if start >= end:
+        return
+
+    pivot = select_pivot(items, start, end)
+    items[pivot], items[end] = items[end], items[pivot]
+    pivot = end
+    pivotVal = items[pivot]
+
+    swapIdx = start
+
+    for i in xrange(start, end):
+        if items[i] < pivotVal:
+            items[i], items[swapIdx] = items[swapIdx], items[i]     # swap
+            swapIdx += 1
+    items[pivot], items[swapIdx] = items[swapIdx], items[pivot]     # swap
+    quick_sort_impl(items, start, swapIdx - 1)
+    quick_sort_impl(items, swapIdx + 1, end)
+
+def select_pivot(items, start, end):
+    return end
