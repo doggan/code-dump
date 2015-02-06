@@ -1,0 +1,6 @@
+<npc id="0" name="NPC 1" class="warrior" texture="enemy.png">
+	<stats level="2" hp="50" mp="75" str="1" int="2" />
+<!--	<faction name=""/> -->
+<!--	<loot id="" chance="TODO:always or %??"/> -->
+<!--	<action id=""/> -->
+</npc>

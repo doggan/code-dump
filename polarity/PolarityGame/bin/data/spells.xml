@@ -1,0 +1,11 @@
+<spell id="0" type="heal" name="Heal" polarity="light" energy="10">
+	<gesture>1</gesture> <!-- Optional -->
+	<rank>1</rank>		 <!-- Optional -->
+	<hp>10</hp>
+</spell>
+
+<spell id="10" type="dd" name="Direct Damage" polarity="both" energy="20">
+	<gesture>0</gesture>
+	<rank>1</rank>
+	<dmg>20</dmg>
+</spell>

@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Polarity", "Polarity.vcproj", "{C62CEC2A-A36A-4818-988D-A9F8C85021B0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Editor - Debug|Win32 = Editor - Debug|Win32
+		Editor - Release|Win32 = Editor - Release|Win32
+		Polarity - Debug|Win32 = Polarity - Debug|Win32
+		Polarity - Release|Win32 = Polarity - Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C62CEC2A-A36A-4818-988D-A9F8C85021B0}.Editor - Debug|Win32.ActiveCfg = Editor - Debug|Win32
+		{C62CEC2A-A36A-4818-988D-A9F8C85021B0}.Editor - Debug|Win32.Build.0 = Editor - Debug|Win32
+		{C62CEC2A-A36A-4818-988D-A9F8C85021B0}.Editor - Release|Win32.ActiveCfg = Editor - Release|Win32
+		{C62CEC2A-A36A-4818-988D-A9F8C85021B0}.Editor - Release|Win32.Build.0 = Editor - Release|Win32
+		{C62CEC2A-A36A-4818-988D-A9F8C85021B0}.Polarity - Debug|Win32.ActiveCfg = Polarity - Debug|Win32
+		{C62CEC2A-A36A-4818-988D-A9F8C85021B0}.Polarity - Debug|Win32.Build.0 = Polarity - Debug|Win32
+		{C62CEC2A-A36A-4818-988D-A9F8C85021B0}.Polarity - Release|Win32.ActiveCfg = Polarity - Release|Win32
+		{C62CEC2A-A36A-4818-988D-A9F8C85021B0}.Polarity - Release|Win32.Build.0 = Polarity - Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

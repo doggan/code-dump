@@ -1,0 +1,17 @@
+<item id="1" name="Minor Healing Potion">
+	<spell>0</spell>
+	<charges>1</charges>
+</item>
+
+<item id="10" name="Dagger of Strength">
+	<slot>weapon</slot>
+	<str>5</str>
+	<int>-4</int>
+<!--	<effect> regeneration effect, etc -->
+</item>
+
+<item id="20" name="Armor of Health">
+	<slot>chest</slot>
+	<hp>50</hp>
+	<def>20</def>
+</item>

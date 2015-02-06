@@ -1,0 +1,31 @@
+<npc id="1" name="A NPC_01" combative="no">
+	<texture>npc01.png</texture>
+	<loot>
+		<item id="1" chance="1"/>
+		<item id="1" chance="1"/>
+		<item id="1" chance=".5"/>
+	</loot>
+	<conversation/>
+</npc>
+
+<npc id="1001" name="testEnemy01" polarity="light" class="">
+	<texture>enemy01_light.png</texture>
+	<stats level="1" hp="100" energy="10" str="" int=""/>
+	<xp>10</xp>
+	<loot>
+		<gold max="10"/>
+		<item id="1" chance="1"/>
+		<item id="1" chance=".5"/>
+		<item id="10" chance="1"/>
+	</loot>
+</npc>
+
+<npc id="1002" name="testEnemy02" class="" polarity="dark" behavior="stay">
+	<texture>enemy01_dark.png</texture>
+	<stats level="1" hp="100" str="" int=""/>
+	<xp>15</xp>
+	<loot>
+		<gold max="10"/>
+		<item id="20" chance=".25"/>
+	</loot>
+</npc>

@@ -1,0 +1,794 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 42;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		002F39FA09D0881F00EBEB88 /* SDL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 002F39F909D0881F00EBEB88 /* SDL.framework */; };
+		002F3A0009D0884600EBEB88 /* SDL.framework in Copy Frameworks into .app bundle */ = {isa = PBXBuildFile; fileRef = 002F39F909D0881F00EBEB88 /* SDL.framework */; };
+		002F3A2E09D0888800EBEB88 /* SDLMain.m in Sources */ = {isa = PBXBuildFile; fileRef = 002F3A2C09D0888800EBEB88 /* SDLMain.m */; };
+		002F3C0109D093BD00EBEB88 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 002F3C0009D093BD00EBEB88 /* OpenGL.framework */; };
+		002F3C6109D0951E00EBEB88 /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 002F3C6009D0951E00EBEB88 /* GLUT.framework */; };
+		524A24A30DD9C9F5008A1CE2 /* NPCManager.h in Copy Frameworks into .app bundle */ = {isa = PBXBuildFile; fileRef = 524A24A20DD9C9F5008A1CE2 /* NPCManager.h */; };
+		524A24A50DD9CA05008A1CE2 /* NPCManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 524A24A40DD9CA05008A1CE2 /* NPCManager.cpp */; };
+		524A24D00DD9CE1A008A1CE2 /* GameProposal_Polarity_ShyamGuthikonda.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 524A24CD0DD9CE1A008A1CE2 /* GameProposal_Polarity_ShyamGuthikonda.pdf */; };
+		524A24D10DD9CE1A008A1CE2 /* moreIdeas.txt in Resources */ = {isa = PBXBuildFile; fileRef = 524A24CE0DD9CE1A008A1CE2 /* moreIdeas.txt */; };
+		524A24D20DD9CE1A008A1CE2 /* TODO.txt in Resources */ = {isa = PBXBuildFile; fileRef = 524A24CF0DD9CE1A008A1CE2 /* TODO.txt */; };
+		524A24E50DD9CFA1008A1CE2 /* ChatDisplay.h in Copy Frameworks into .app bundle */ = {isa = PBXBuildFile; fileRef = 524A24E40DD9CFA1008A1CE2 /* ChatDisplay.h */; };
+		524A24FD0DDA0CFC008A1CE2 /* ChatDisplay.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 524A24FC0DDA0CFC008A1CE2 /* ChatDisplay.cpp */; };
+		524A25050DDA0D9F008A1CE2 /* GUI.h in Copy Frameworks into .app bundle */ = {isa = PBXBuildFile; fileRef = 524A25030DDA0D9F008A1CE2 /* GUI.h */; };
+		524A25060DDA0D9F008A1CE2 /* Health.h in Copy Frameworks into .app bundle */ = {isa = PBXBuildFile; fileRef = 524A25040DDA0D9F008A1CE2 /* Health.h */; };
+		524A256B0DDA14DA008A1CE2 /* InventoryDisplay.h in Copy Frameworks into .app bundle */ = {isa = PBXBuildFile; fileRef = 524A25690DDA14DA008A1CE2 /* InventoryDisplay.h */; };
+		524A256E0DDA15D3008A1CE2 /* InventoryDisplay.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 524A256D0DDA15D3008A1CE2 /* InventoryDisplay.cpp */; };
+		5282F60B0DD7D370002FACAD /* SDL_image.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5282F60A0DD7D370002FACAD /* SDL_image.framework */; };
+		5282F6150DD7D3C1002FACAD /* tinyxml.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5282F6120DD7D3C1002FACAD /* tinyxml.cpp */; };
+		5282F6160DD7D3C1002FACAD /* tinyxmlerror.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5282F6130DD7D3C1002FACAD /* tinyxmlerror.cpp */; };
+		5282F6170DD7D3C1002FACAD /* tinyxmlparser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5282F6140DD7D3C1002FACAD /* tinyxmlparser.cpp */; };
+		5282F64C0DD7D3DB002FACAD /* actionevent.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5282F6190DD7D3DB002FACAD /* actionevent.cpp */; };
+		5282F64D0DD7D3DB002FACAD /* basiccontainer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5282F61A0DD7D3DB002FACAD /* basiccontainer.cpp */; };
+		5282F64E0DD7D3DB002FACAD /* cliprectangle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5282F61B0DD7D3DB002FACAD /* cliprectangle.cpp */; };
+		5282F64F0DD7D3DB002FACAD /* color.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5282F61C0DD7D3DB002FACAD /* color.cpp */; };
+		5282F6500DD7D3DB002FACAD /* defaultfont.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5282F61D0DD7D3DB002FACAD /* defaultfont.cpp */; };
+		5282F6510DD7D3DB002FACAD /* event.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5282F61E0DD7D3DB002FACAD /* event.cpp */; };
+		5282F6520DD7D3DB002FACAD /* exception.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5282F61F0DD7D3DB002FACAD /* exception.cpp */; };
+		5282F6530DD7D3DB002FACAD /* focushandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5282F6200DD7D3DB002FACAD /* focushandler.cpp */; };
+		5282F6540DD7D3DB002FACAD /* font.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5282F6210DD7D3DB002FACAD /* font.cpp */; };
+		5282F6550DD7D3DB002FACAD /* genericinput.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5282F6220DD7D3DB002FACAD /* genericinput.cpp */; };
+		5282F6560DD7D3DB002FACAD /* graphics.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5282F6230DD7D3DB002FACAD /* graphics.cpp */; };
+		5282F6570DD7D3DB002FACAD /* gui.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5282F6240DD7D3DB002FACAD /* gui.cpp */; };
+		5282F6580DD7D3DB002FACAD /* guichan.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5282F6250DD7D3DB002FACAD /* guichan.cpp */; };
+		5282F6590DD7D3DB002FACAD /* image.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5282F6260DD7D3DB002FACAD /* image.cpp */; };
+		5282F65A0DD7D3DB002FACAD /* imagefont.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5282F6270DD7D3DB002FACAD /* imagefont.cpp */; };
+		5282F65B0DD7D3DB002FACAD /* inputevent.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5282F6280DD7D3DB002FACAD /* inputevent.cpp */; };
+		5282F65C0DD7D3DB002FACAD /* key.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5282F6290DD7D3DB002FACAD /* key.cpp */; };
+		5282F65D0DD7D3DB002FACAD /* keyevent.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5282F62A0DD7D3DB002FACAD /* keyevent.cpp */; };
+		5282F65E0DD7D3DB002FACAD /* keyinput.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5282F62B0DD7D3DB002FACAD /* keyinput.cpp */; };
+		5282F65F0DD7D3DB002FACAD /* mouseevent.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5282F62C0DD7D3DB002FACAD /* mouseevent.cpp */; };
+		5282F6600DD7D3DB002FACAD /* mouseinput.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5282F62D0DD7D3DB002FACAD /* mouseinput.cpp */; };
+		5282F6610DD7D3DB002FACAD /* opengl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5282F62F0DD7D3DB002FACAD /* opengl.cpp */; };
+		5282F6620DD7D3DB002FACAD /* openglgraphics.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5282F6300DD7D3DB002FACAD /* openglgraphics.cpp */; };
+		5282F6630DD7D3DB002FACAD /* openglimage.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5282F6310DD7D3DB002FACAD /* openglimage.cpp */; };
+		5282F6640DD7D3DB002FACAD /* rectangle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5282F6320DD7D3DB002FACAD /* rectangle.cpp */; };
+		5282F6650DD7D3DB002FACAD /* sdl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5282F6340DD7D3DB002FACAD /* sdl.cpp */; };
+		5282F6660DD7D3DB002FACAD /* sdlgraphics.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5282F6350DD7D3DB002FACAD /* sdlgraphics.cpp */; };
+		5282F6670DD7D3DB002FACAD /* sdlimage.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5282F6360DD7D3DB002FACAD /* sdlimage.cpp */; };
+		5282F6680DD7D3DB002FACAD /* sdlimageloader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5282F6370DD7D3DB002FACAD /* sdlimageloader.cpp */; };
+		5282F6690DD7D3DB002FACAD /* sdlinput.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5282F6380DD7D3DB002FACAD /* sdlinput.cpp */; };
+		5282F66A0DD7D3DB002FACAD /* selectionevent.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5282F6390DD7D3DB002FACAD /* selectionevent.cpp */; };
+		5282F66B0DD7D3DB002FACAD /* widget.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5282F63A0DD7D3DB002FACAD /* widget.cpp */; };
+		5282F66C0DD7D3DB002FACAD /* button.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5282F63C0DD7D3DB002FACAD /* button.cpp */; };
+		5282F66D0DD7D3DB002FACAD /* checkbox.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5282F63D0DD7D3DB002FACAD /* checkbox.cpp */; };
+		5282F66E0DD7D3DB002FACAD /* container.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5282F63E0DD7D3DB002FACAD /* container.cpp */; };
+		5282F66F0DD7D3DB002FACAD /* dropdown.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5282F63F0DD7D3DB002FACAD /* dropdown.cpp */; };
+		5282F6700DD7D3DB002FACAD /* icon.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5282F6400DD7D3DB002FACAD /* icon.cpp */; };
+		5282F6710DD7D3DB002FACAD /* imagebutton.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5282F6410DD7D3DB002FACAD /* imagebutton.cpp */; };
+		5282F6720DD7D3DB002FACAD /* label.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5282F6420DD7D3DB002FACAD /* label.cpp */; };
+		5282F6730DD7D3DB002FACAD /* listbox.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5282F6430DD7D3DB002FACAD /* listbox.cpp */; };
+		5282F6740DD7D3DB002FACAD /* radiobutton.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5282F6440DD7D3DB002FACAD /* radiobutton.cpp */; };
+		5282F6750DD7D3DB002FACAD /* scrollarea.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5282F6450DD7D3DB002FACAD /* scrollarea.cpp */; };
+		5282F6760DD7D3DB002FACAD /* slider.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5282F6460DD7D3DB002FACAD /* slider.cpp */; };
+		5282F6770DD7D3DB002FACAD /* tab.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5282F6470DD7D3DB002FACAD /* tab.cpp */; };
+		5282F6780DD7D3DB002FACAD /* tabbedarea.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5282F6480DD7D3DB002FACAD /* tabbedarea.cpp */; };
+		5282F6790DD7D3DB002FACAD /* textbox.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5282F6490DD7D3DB002FACAD /* textbox.cpp */; };
+		5282F67A0DD7D3DB002FACAD /* textfield.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5282F64A0DD7D3DB002FACAD /* textfield.cpp */; };
+		5282F67B0DD7D3DB002FACAD /* window.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5282F64B0DD7D3DB002FACAD /* window.cpp */; };
+		5282F6930DD7D3F0002FACAD /* Application.h in Copy Frameworks into .app bundle */ = {isa = PBXBuildFile; fileRef = 5282F67C0DD7D3F0002FACAD /* Application.h */; };
+		5282F6940DD7D3F0002FACAD /* Common.h in Copy Frameworks into .app bundle */ = {isa = PBXBuildFile; fileRef = 5282F67D0DD7D3F0002FACAD /* Common.h */; };
+		5282F6950DD7D3F0002FACAD /* EntityBase.h in Copy Frameworks into .app bundle */ = {isa = PBXBuildFile; fileRef = 5282F67E0DD7D3F0002FACAD /* EntityBase.h */; };
+		5282F6960DD7D3F0002FACAD /* Exception.h in Copy Frameworks into .app bundle */ = {isa = PBXBuildFile; fileRef = 5282F67F0DD7D3F0002FACAD /* Exception.h */; };
+		5282F6970DD7D3F0002FACAD /* Factory.h in Copy Frameworks into .app bundle */ = {isa = PBXBuildFile; fileRef = 5282F6800DD7D3F0002FACAD /* Factory.h */; };
+		5282F6980DD7D3F0002FACAD /* GestureSystem.h in Copy Frameworks into .app bundle */ = {isa = PBXBuildFile; fileRef = 5282F6810DD7D3F0002FACAD /* GestureSystem.h */; };
+		5282F6990DD7D3F0002FACAD /* GlobalTimer.h in Copy Frameworks into .app bundle */ = {isa = PBXBuildFile; fileRef = 5282F6820DD7D3F0002FACAD /* GlobalTimer.h */; };
+		5282F69C0DD7D3F0002FACAD /* Input.h in Copy Frameworks into .app bundle */ = {isa = PBXBuildFile; fileRef = 5282F6850DD7D3F0002FACAD /* Input.h */; };
+		5282F69D0DD7D3F0002FACAD /* Inventory.h in Copy Frameworks into .app bundle */ = {isa = PBXBuildFile; fileRef = 5282F6860DD7D3F0002FACAD /* Inventory.h */; };
+		5282F69E0DD7D3F0002FACAD /* Item.h in Copy Frameworks into .app bundle */ = {isa = PBXBuildFile; fileRef = 5282F6870DD7D3F0002FACAD /* Item.h */; };
+		5282F6A00DD7D3F0002FACAD /* ItemManager.h in Copy Frameworks into .app bundle */ = {isa = PBXBuildFile; fileRef = 5282F6890DD7D3F0002FACAD /* ItemManager.h */; };
+		5282F6A10DD7D3F0002FACAD /* NPC.h in Copy Frameworks into .app bundle */ = {isa = PBXBuildFile; fileRef = 5282F68A0DD7D3F0002FACAD /* NPC.h */; };
+		5282F6A20DD7D3F0002FACAD /* Player.h in Copy Frameworks into .app bundle */ = {isa = PBXBuildFile; fileRef = 5282F68B0DD7D3F0002FACAD /* Player.h */; };
+		5282F6A30DD7D3F0002FACAD /* Projectile.h in Copy Frameworks into .app bundle */ = {isa = PBXBuildFile; fileRef = 5282F68C0DD7D3F0002FACAD /* Projectile.h */; };
+		5282F6A40DD7D3F0002FACAD /* ProjectileManager.h in Copy Frameworks into .app bundle */ = {isa = PBXBuildFile; fileRef = 5282F68D0DD7D3F0002FACAD /* ProjectileManager.h */; };
+		5282F6A50DD7D3F0002FACAD /* Renderer.h in Copy Frameworks into .app bundle */ = {isa = PBXBuildFile; fileRef = 5282F68E0DD7D3F0002FACAD /* Renderer.h */; };
+		5282F6A60DD7D3F0002FACAD /* Singleton.h in Copy Frameworks into .app bundle */ = {isa = PBXBuildFile; fileRef = 5282F68F0DD7D3F0002FACAD /* Singleton.h */; };
+		5282F6A70DD7D3F0002FACAD /* SpellSystem.h in Copy Frameworks into .app bundle */ = {isa = PBXBuildFile; fileRef = 5282F6900DD7D3F0002FACAD /* SpellSystem.h */; };
+		5282F6A80DD7D3F0002FACAD /* Utilities.h in Copy Frameworks into .app bundle */ = {isa = PBXBuildFile; fileRef = 5282F6910DD7D3F0002FACAD /* Utilities.h */; };
+		5282F6A90DD7D3F0002FACAD /* World.h in Copy Frameworks into .app bundle */ = {isa = PBXBuildFile; fileRef = 5282F6920DD7D3F0002FACAD /* World.h */; };
+		5282F6BD0DD7D3FA002FACAD /* Application.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5282F6AA0DD7D3FA002FACAD /* Application.cpp */; };
+		5282F6BE0DD7D3FA002FACAD /* EntityBase.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5282F6AB0DD7D3FA002FACAD /* EntityBase.cpp */; };
+		5282F6BF0DD7D3FA002FACAD /* Exception.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5282F6AC0DD7D3FA002FACAD /* Exception.cpp */; };
+		5282F6C00DD7D3FA002FACAD /* GestureSystem.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5282F6AD0DD7D3FA002FACAD /* GestureSystem.cpp */; };
+		5282F6C10DD7D3FA002FACAD /* GlobalTimer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5282F6AE0DD7D3FA002FACAD /* GlobalTimer.cpp */; };
+		5282F6C20DD7D3FA002FACAD /* GUI.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5282F6AF0DD7D3FA002FACAD /* GUI.cpp */; };
+		5282F6C30DD7D3FA002FACAD /* Input.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5282F6B00DD7D3FA002FACAD /* Input.cpp */; };
+		5282F6C40DD7D3FA002FACAD /* Inventory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5282F6B10DD7D3FA002FACAD /* Inventory.cpp */; };
+		5282F6C50DD7D3FA002FACAD /* Item.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5282F6B20DD7D3FA002FACAD /* Item.cpp */; };
+		5282F6C70DD7D3FA002FACAD /* ItemManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5282F6B40DD7D3FA002FACAD /* ItemManager.cpp */; };
+		5282F6C80DD7D3FA002FACAD /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5282F6B50DD7D3FA002FACAD /* main.cpp */; };
+		5282F6C90DD7D3FA002FACAD /* NPC.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5282F6B60DD7D3FA002FACAD /* NPC.cpp */; };
+		5282F6CA0DD7D3FA002FACAD /* Player.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5282F6B70DD7D3FA002FACAD /* Player.cpp */; };
+		5282F6CB0DD7D3FA002FACAD /* Projectile.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5282F6B80DD7D3FA002FACAD /* Projectile.cpp */; };
+		5282F6CC0DD7D3FA002FACAD /* ProjectileManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5282F6B90DD7D3FA002FACAD /* ProjectileManager.cpp */; };
+		5282F6CD0DD7D3FA002FACAD /* Renderer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5282F6BA0DD7D3FA002FACAD /* Renderer.cpp */; };
+		5282F6CE0DD7D3FA002FACAD /* SpellSystem.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5282F6BB0DD7D3FA002FACAD /* SpellSystem.cpp */; };
+		5282F6CF0DD7D3FA002FACAD /* World.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5282F6BC0DD7D3FA002FACAD /* World.cpp */; };
+		529DBC050DDA5ABE00EFCACE /* PlayerInfoDisplay.h in Copy Frameworks into .app bundle */ = {isa = PBXBuildFile; fileRef = 529DBC040DDA5ABE00EFCACE /* PlayerInfoDisplay.h */; };
+		529DBC110DDA5C5400EFCACE /* PlayerInfoDisplay.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 529DBC100DDA5C5400EFCACE /* PlayerInfoDisplay.cpp */; };
+		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		002F39FD09D0883400EBEB88 /* Copy Frameworks into .app bundle */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				002F3A0009D0884600EBEB88 /* SDL.framework in Copy Frameworks into .app bundle */,
+				5282F6930DD7D3F0002FACAD /* Application.h in Copy Frameworks into .app bundle */,
+				5282F6940DD7D3F0002FACAD /* Common.h in Copy Frameworks into .app bundle */,
+				5282F6950DD7D3F0002FACAD /* EntityBase.h in Copy Frameworks into .app bundle */,
+				5282F6960DD7D3F0002FACAD /* Exception.h in Copy Frameworks into .app bundle */,
+				5282F6970DD7D3F0002FACAD /* Factory.h in Copy Frameworks into .app bundle */,
+				5282F6980DD7D3F0002FACAD /* GestureSystem.h in Copy Frameworks into .app bundle */,
+				5282F6990DD7D3F0002FACAD /* GlobalTimer.h in Copy Frameworks into .app bundle */,
+				5282F69C0DD7D3F0002FACAD /* Input.h in Copy Frameworks into .app bundle */,
+				5282F69D0DD7D3F0002FACAD /* Inventory.h in Copy Frameworks into .app bundle */,
+				5282F69E0DD7D3F0002FACAD /* Item.h in Copy Frameworks into .app bundle */,
+				5282F6A00DD7D3F0002FACAD /* ItemManager.h in Copy Frameworks into .app bundle */,
+				5282F6A10DD7D3F0002FACAD /* NPC.h in Copy Frameworks into .app bundle */,
+				5282F6A20DD7D3F0002FACAD /* Player.h in Copy Frameworks into .app bundle */,
+				5282F6A30DD7D3F0002FACAD /* Projectile.h in Copy Frameworks into .app bundle */,
+				5282F6A40DD7D3F0002FACAD /* ProjectileManager.h in Copy Frameworks into .app bundle */,
+				5282F6A50DD7D3F0002FACAD /* Renderer.h in Copy Frameworks into .app bundle */,
+				5282F6A60DD7D3F0002FACAD /* Singleton.h in Copy Frameworks into .app bundle */,
+				5282F6A70DD7D3F0002FACAD /* SpellSystem.h in Copy Frameworks into .app bundle */,
+				5282F6A80DD7D3F0002FACAD /* Utilities.h in Copy Frameworks into .app bundle */,
+				5282F6A90DD7D3F0002FACAD /* World.h in Copy Frameworks into .app bundle */,
+				524A24A30DD9C9F5008A1CE2 /* NPCManager.h in Copy Frameworks into .app bundle */,
+				524A24E50DD9CFA1008A1CE2 /* ChatDisplay.h in Copy Frameworks into .app bundle */,
+				524A25050DDA0D9F008A1CE2 /* GUI.h in Copy Frameworks into .app bundle */,
+				524A25060DDA0D9F008A1CE2 /* Health.h in Copy Frameworks into .app bundle */,
+				524A256B0DDA14DA008A1CE2 /* InventoryDisplay.h in Copy Frameworks into .app bundle */,
+				529DBC050DDA5ABE00EFCACE /* PlayerInfoDisplay.h in Copy Frameworks into .app bundle */,
+			);
+			name = "Copy Frameworks into .app bundle";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		002F39F909D0881F00EBEB88 /* SDL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL.framework; path = /Library/Frameworks/SDL.framework; sourceTree = "<absolute>"; };
+		002F3A2B09D0888800EBEB88 /* SDLMain.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = SDLMain.h; sourceTree = SOURCE_ROOT; };
+		002F3A2C09D0888800EBEB88 /* SDLMain.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = SDLMain.m; sourceTree = SOURCE_ROOT; };
+		002F3C0009D093BD00EBEB88 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = /System/Library/Frameworks/OpenGL.framework; sourceTree = "<absolute>"; };
+		002F3C6009D0951E00EBEB88 /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = ../../../../../../../../../../System/Library/Frameworks/GLUT.framework; sourceTree = SOURCE_ROOT; };
+		1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
+		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		524A24A20DD9C9F5008A1CE2 /* NPCManager.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = NPCManager.h; path = ../inc/NPCManager.h; sourceTree = SOURCE_ROOT; };
+		524A24A40DD9CA05008A1CE2 /* NPCManager.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = NPCManager.cpp; path = ../src/NPCManager.cpp; sourceTree = SOURCE_ROOT; };
+		524A24CD0DD9CE1A008A1CE2 /* GameProposal_Polarity_ShyamGuthikonda.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = GameProposal_Polarity_ShyamGuthikonda.pdf; path = ../docs/GameProposal_Polarity_ShyamGuthikonda.pdf; sourceTree = SOURCE_ROOT; };
+		524A24CE0DD9CE1A008A1CE2 /* moreIdeas.txt */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; name = moreIdeas.txt; path = ../docs/moreIdeas.txt; sourceTree = SOURCE_ROOT; };
+		524A24CF0DD9CE1A008A1CE2 /* TODO.txt */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; name = TODO.txt; path = ../docs/TODO.txt; sourceTree = SOURCE_ROOT; };
+		524A24E40DD9CFA1008A1CE2 /* ChatDisplay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ChatDisplay.h; path = ../inc/GUI/ChatDisplay.h; sourceTree = SOURCE_ROOT; };
+		524A24FC0DDA0CFC008A1CE2 /* ChatDisplay.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ChatDisplay.cpp; path = ../src/GUI/ChatDisplay.cpp; sourceTree = SOURCE_ROOT; };
+		524A25030DDA0D9F008A1CE2 /* GUI.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = GUI.h; path = ../inc/GUI/GUI.h; sourceTree = SOURCE_ROOT; };
+		524A25040DDA0D9F008A1CE2 /* Health.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = Health.h; path = ../inc/GUI/Health.h; sourceTree = SOURCE_ROOT; };
+		524A25690DDA14DA008A1CE2 /* InventoryDisplay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = InventoryDisplay.h; path = ../inc/GUI/InventoryDisplay.h; sourceTree = SOURCE_ROOT; };
+		524A256D0DDA15D3008A1CE2 /* InventoryDisplay.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = InventoryDisplay.cpp; path = ../src/GUI/InventoryDisplay.cpp; sourceTree = SOURCE_ROOT; };
+		5282F60A0DD7D370002FACAD /* SDL_image.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL_image.framework; path = ../../../../../../Library/Frameworks/SDL_image.framework; sourceTree = SOURCE_ROOT; };
+		5282F6120DD7D3C1002FACAD /* tinyxml.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = tinyxml.cpp; path = ../ext/inc/tinyxml/tinyxml.cpp; sourceTree = SOURCE_ROOT; };
+		5282F6130DD7D3C1002FACAD /* tinyxmlerror.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = tinyxmlerror.cpp; path = ../ext/inc/tinyxml/tinyxmlerror.cpp; sourceTree = SOURCE_ROOT; };
+		5282F6140DD7D3C1002FACAD /* tinyxmlparser.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = tinyxmlparser.cpp; path = ../ext/inc/tinyxml/tinyxmlparser.cpp; sourceTree = SOURCE_ROOT; };
+		5282F6190DD7D3DB002FACAD /* actionevent.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = actionevent.cpp; path = ../ext/inc/guichan/src/actionevent.cpp; sourceTree = SOURCE_ROOT; };
+		5282F61A0DD7D3DB002FACAD /* basiccontainer.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = basiccontainer.cpp; path = ../ext/inc/guichan/src/basiccontainer.cpp; sourceTree = SOURCE_ROOT; };
+		5282F61B0DD7D3DB002FACAD /* cliprectangle.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = cliprectangle.cpp; path = ../ext/inc/guichan/src/cliprectangle.cpp; sourceTree = SOURCE_ROOT; };
+		5282F61C0DD7D3DB002FACAD /* color.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = color.cpp; path = ../ext/inc/guichan/src/color.cpp; sourceTree = SOURCE_ROOT; };
+		5282F61D0DD7D3DB002FACAD /* defaultfont.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = defaultfont.cpp; path = ../ext/inc/guichan/src/defaultfont.cpp; sourceTree = SOURCE_ROOT; };
+		5282F61E0DD7D3DB002FACAD /* event.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = event.cpp; path = ../ext/inc/guichan/src/event.cpp; sourceTree = SOURCE_ROOT; };
+		5282F61F0DD7D3DB002FACAD /* exception.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = exception.cpp; path = ../ext/inc/guichan/src/exception.cpp; sourceTree = SOURCE_ROOT; };
+		5282F6200DD7D3DB002FACAD /* focushandler.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = focushandler.cpp; path = ../ext/inc/guichan/src/focushandler.cpp; sourceTree = SOURCE_ROOT; };
+		5282F6210DD7D3DB002FACAD /* font.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = font.cpp; path = ../ext/inc/guichan/src/font.cpp; sourceTree = SOURCE_ROOT; };
+		5282F6220DD7D3DB002FACAD /* genericinput.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = genericinput.cpp; path = ../ext/inc/guichan/src/genericinput.cpp; sourceTree = SOURCE_ROOT; };
+		5282F6230DD7D3DB002FACAD /* graphics.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = graphics.cpp; path = ../ext/inc/guichan/src/graphics.cpp; sourceTree = SOURCE_ROOT; };
+		5282F6240DD7D3DB002FACAD /* gui.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = gui.cpp; path = ../ext/inc/guichan/src/gui.cpp; sourceTree = SOURCE_ROOT; };
+		5282F6250DD7D3DB002FACAD /* guichan.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = guichan.cpp; path = ../ext/inc/guichan/src/guichan.cpp; sourceTree = SOURCE_ROOT; };
+		5282F6260DD7D3DB002FACAD /* image.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = image.cpp; path = ../ext/inc/guichan/src/image.cpp; sourceTree = SOURCE_ROOT; };
+		5282F6270DD7D3DB002FACAD /* imagefont.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = imagefont.cpp; path = ../ext/inc/guichan/src/imagefont.cpp; sourceTree = SOURCE_ROOT; };
+		5282F6280DD7D3DB002FACAD /* inputevent.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = inputevent.cpp; path = ../ext/inc/guichan/src/inputevent.cpp; sourceTree = SOURCE_ROOT; };
+		5282F6290DD7D3DB002FACAD /* key.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = key.cpp; path = ../ext/inc/guichan/src/key.cpp; sourceTree = SOURCE_ROOT; };
+		5282F62A0DD7D3DB002FACAD /* keyevent.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = keyevent.cpp; path = ../ext/inc/guichan/src/keyevent.cpp; sourceTree = SOURCE_ROOT; };
+		5282F62B0DD7D3DB002FACAD /* keyinput.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = keyinput.cpp; path = ../ext/inc/guichan/src/keyinput.cpp; sourceTree = SOURCE_ROOT; };
+		5282F62C0DD7D3DB002FACAD /* mouseevent.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = mouseevent.cpp; path = ../ext/inc/guichan/src/mouseevent.cpp; sourceTree = SOURCE_ROOT; };
+		5282F62D0DD7D3DB002FACAD /* mouseinput.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = mouseinput.cpp; path = ../ext/inc/guichan/src/mouseinput.cpp; sourceTree = SOURCE_ROOT; };
+		5282F62F0DD7D3DB002FACAD /* opengl.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = opengl.cpp; path = ../ext/inc/guichan/src/opengl/opengl.cpp; sourceTree = SOURCE_ROOT; };
+		5282F6300DD7D3DB002FACAD /* openglgraphics.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = openglgraphics.cpp; path = ../ext/inc/guichan/src/opengl/openglgraphics.cpp; sourceTree = SOURCE_ROOT; };
+		5282F6310DD7D3DB002FACAD /* openglimage.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = openglimage.cpp; path = ../ext/inc/guichan/src/opengl/openglimage.cpp; sourceTree = SOURCE_ROOT; };
+		5282F6320DD7D3DB002FACAD /* rectangle.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = rectangle.cpp; path = ../ext/inc/guichan/src/rectangle.cpp; sourceTree = SOURCE_ROOT; };
+		5282F6340DD7D3DB002FACAD /* sdl.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = sdl.cpp; path = ../ext/inc/guichan/src/sdl/sdl.cpp; sourceTree = SOURCE_ROOT; };
+		5282F6350DD7D3DB002FACAD /* sdlgraphics.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = sdlgraphics.cpp; path = ../ext/inc/guichan/src/sdl/sdlgraphics.cpp; sourceTree = SOURCE_ROOT; };
+		5282F6360DD7D3DB002FACAD /* sdlimage.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = sdlimage.cpp; path = ../ext/inc/guichan/src/sdl/sdlimage.cpp; sourceTree = SOURCE_ROOT; };
+		5282F6370DD7D3DB002FACAD /* sdlimageloader.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = sdlimageloader.cpp; path = ../ext/inc/guichan/src/sdl/sdlimageloader.cpp; sourceTree = SOURCE_ROOT; };
+		5282F6380DD7D3DB002FACAD /* sdlinput.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = sdlinput.cpp; path = ../ext/inc/guichan/src/sdl/sdlinput.cpp; sourceTree = SOURCE_ROOT; };
+		5282F6390DD7D3DB002FACAD /* selectionevent.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = selectionevent.cpp; path = ../ext/inc/guichan/src/selectionevent.cpp; sourceTree = SOURCE_ROOT; };
+		5282F63A0DD7D3DB002FACAD /* widget.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = widget.cpp; path = ../ext/inc/guichan/src/widget.cpp; sourceTree = SOURCE_ROOT; };
+		5282F63C0DD7D3DB002FACAD /* button.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = button.cpp; path = ../ext/inc/guichan/src/widgets/button.cpp; sourceTree = SOURCE_ROOT; };
+		5282F63D0DD7D3DB002FACAD /* checkbox.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = checkbox.cpp; path = ../ext/inc/guichan/src/widgets/checkbox.cpp; sourceTree = SOURCE_ROOT; };
+		5282F63E0DD7D3DB002FACAD /* container.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = container.cpp; path = ../ext/inc/guichan/src/widgets/container.cpp; sourceTree = SOURCE_ROOT; };
+		5282F63F0DD7D3DB002FACAD /* dropdown.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = dropdown.cpp; path = ../ext/inc/guichan/src/widgets/dropdown.cpp; sourceTree = SOURCE_ROOT; };
+		5282F6400DD7D3DB002FACAD /* icon.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = icon.cpp; path = ../ext/inc/guichan/src/widgets/icon.cpp; sourceTree = SOURCE_ROOT; };
+		5282F6410DD7D3DB002FACAD /* imagebutton.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = imagebutton.cpp; path = ../ext/inc/guichan/src/widgets/imagebutton.cpp; sourceTree = SOURCE_ROOT; };
+		5282F6420DD7D3DB002FACAD /* label.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = label.cpp; path = ../ext/inc/guichan/src/widgets/label.cpp; sourceTree = SOURCE_ROOT; };
+		5282F6430DD7D3DB002FACAD /* listbox.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = listbox.cpp; path = ../ext/inc/guichan/src/widgets/listbox.cpp; sourceTree = SOURCE_ROOT; };
+		5282F6440DD7D3DB002FACAD /* radiobutton.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = radiobutton.cpp; path = ../ext/inc/guichan/src/widgets/radiobutton.cpp; sourceTree = SOURCE_ROOT; };
+		5282F6450DD7D3DB002FACAD /* scrollarea.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = scrollarea.cpp; path = ../ext/inc/guichan/src/widgets/scrollarea.cpp; sourceTree = SOURCE_ROOT; };
+		5282F6460DD7D3DB002FACAD /* slider.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = slider.cpp; path = ../ext/inc/guichan/src/widgets/slider.cpp; sourceTree = SOURCE_ROOT; };
+		5282F6470DD7D3DB002FACAD /* tab.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = tab.cpp; path = ../ext/inc/guichan/src/widgets/tab.cpp; sourceTree = SOURCE_ROOT; };
+		5282F6480DD7D3DB002FACAD /* tabbedarea.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = tabbedarea.cpp; path = ../ext/inc/guichan/src/widgets/tabbedarea.cpp; sourceTree = SOURCE_ROOT; };
+		5282F6490DD7D3DB002FACAD /* textbox.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = textbox.cpp; path = ../ext/inc/guichan/src/widgets/textbox.cpp; sourceTree = SOURCE_ROOT; };
+		5282F64A0DD7D3DB002FACAD /* textfield.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = textfield.cpp; path = ../ext/inc/guichan/src/widgets/textfield.cpp; sourceTree = SOURCE_ROOT; };
+		5282F64B0DD7D3DB002FACAD /* window.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = window.cpp; path = ../ext/inc/guichan/src/widgets/window.cpp; sourceTree = SOURCE_ROOT; };
+		5282F67C0DD7D3F0002FACAD /* Application.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = Application.h; path = ../inc/Application.h; sourceTree = SOURCE_ROOT; };
+		5282F67D0DD7D3F0002FACAD /* Common.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = Common.h; path = ../inc/Common.h; sourceTree = SOURCE_ROOT; };
+		5282F67E0DD7D3F0002FACAD /* EntityBase.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = EntityBase.h; path = ../inc/EntityBase.h; sourceTree = SOURCE_ROOT; };
+		5282F67F0DD7D3F0002FACAD /* Exception.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = Exception.h; path = ../inc/Exception.h; sourceTree = SOURCE_ROOT; };
+		5282F6800DD7D3F0002FACAD /* Factory.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = Factory.h; path = ../inc/Factory.h; sourceTree = SOURCE_ROOT; };
+		5282F6810DD7D3F0002FACAD /* GestureSystem.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = GestureSystem.h; path = ../inc/GestureSystem.h; sourceTree = SOURCE_ROOT; };
+		5282F6820DD7D3F0002FACAD /* GlobalTimer.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = GlobalTimer.h; path = ../inc/GlobalTimer.h; sourceTree = SOURCE_ROOT; };
+		5282F6850DD7D3F0002FACAD /* Input.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = Input.h; path = ../inc/Input.h; sourceTree = SOURCE_ROOT; };
+		5282F6860DD7D3F0002FACAD /* Inventory.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = Inventory.h; path = ../inc/Inventory.h; sourceTree = SOURCE_ROOT; };
+		5282F6870DD7D3F0002FACAD /* Item.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = Item.h; path = ../inc/Item.h; sourceTree = SOURCE_ROOT; };
+		5282F6890DD7D3F0002FACAD /* ItemManager.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = ItemManager.h; path = ../inc/ItemManager.h; sourceTree = SOURCE_ROOT; };
+		5282F68A0DD7D3F0002FACAD /* NPC.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = NPC.h; path = ../inc/NPC.h; sourceTree = SOURCE_ROOT; };
+		5282F68B0DD7D3F0002FACAD /* Player.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = Player.h; path = ../inc/Player.h; sourceTree = SOURCE_ROOT; };
+		5282F68C0DD7D3F0002FACAD /* Projectile.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = Projectile.h; path = ../inc/Projectile.h; sourceTree = SOURCE_ROOT; };
+		5282F68D0DD7D3F0002FACAD /* ProjectileManager.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = ProjectileManager.h; path = ../inc/ProjectileManager.h; sourceTree = SOURCE_ROOT; };
+		5282F68E0DD7D3F0002FACAD /* Renderer.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = Renderer.h; path = ../inc/Renderer.h; sourceTree = SOURCE_ROOT; };
+		5282F68F0DD7D3F0002FACAD /* Singleton.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = Singleton.h; path = ../inc/Singleton.h; sourceTree = SOURCE_ROOT; };
+		5282F6900DD7D3F0002FACAD /* SpellSystem.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = SpellSystem.h; path = ../inc/SpellSystem.h; sourceTree = SOURCE_ROOT; };
+		5282F6910DD7D3F0002FACAD /* Utilities.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = Utilities.h; path = ../inc/Utilities.h; sourceTree = SOURCE_ROOT; };
+		5282F6920DD7D3F0002FACAD /* World.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = World.h; path = ../inc/World.h; sourceTree = SOURCE_ROOT; };
+		5282F6AA0DD7D3FA002FACAD /* Application.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = Application.cpp; path = ../src/Application.cpp; sourceTree = SOURCE_ROOT; };
+		5282F6AB0DD7D3FA002FACAD /* EntityBase.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = EntityBase.cpp; path = ../src/EntityBase.cpp; sourceTree = SOURCE_ROOT; };
+		5282F6AC0DD7D3FA002FACAD /* Exception.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = Exception.cpp; path = ../src/Exception.cpp; sourceTree = SOURCE_ROOT; };
+		5282F6AD0DD7D3FA002FACAD /* GestureSystem.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = GestureSystem.cpp; path = ../src/GestureSystem.cpp; sourceTree = SOURCE_ROOT; };
+		5282F6AE0DD7D3FA002FACAD /* GlobalTimer.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = GlobalTimer.cpp; path = ../src/GlobalTimer.cpp; sourceTree = SOURCE_ROOT; };
+		5282F6AF0DD7D3FA002FACAD /* GUI.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = GUI.cpp; path = ../src/GUI/GUI.cpp; sourceTree = SOURCE_ROOT; };
+		5282F6B00DD7D3FA002FACAD /* Input.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = Input.cpp; path = ../src/Input.cpp; sourceTree = SOURCE_ROOT; };
+		5282F6B10DD7D3FA002FACAD /* Inventory.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = Inventory.cpp; path = ../src/Inventory.cpp; sourceTree = SOURCE_ROOT; };
+		5282F6B20DD7D3FA002FACAD /* Item.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = Item.cpp; path = ../src/Item.cpp; sourceTree = SOURCE_ROOT; };
+		5282F6B40DD7D3FA002FACAD /* ItemManager.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = ItemManager.cpp; path = ../src/ItemManager.cpp; sourceTree = SOURCE_ROOT; };
+		5282F6B50DD7D3FA002FACAD /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = main.cpp; path = ../src/main.cpp; sourceTree = SOURCE_ROOT; };
+		5282F6B60DD7D3FA002FACAD /* NPC.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = NPC.cpp; path = ../src/NPC.cpp; sourceTree = SOURCE_ROOT; };
+		5282F6B70DD7D3FA002FACAD /* Player.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = Player.cpp; path = ../src/Player.cpp; sourceTree = SOURCE_ROOT; };
+		5282F6B80DD7D3FA002FACAD /* Projectile.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = Projectile.cpp; path = ../src/Projectile.cpp; sourceTree = SOURCE_ROOT; };
+		5282F6B90DD7D3FA002FACAD /* ProjectileManager.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = ProjectileManager.cpp; path = ../src/ProjectileManager.cpp; sourceTree = SOURCE_ROOT; };
+		5282F6BA0DD7D3FA002FACAD /* Renderer.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = Renderer.cpp; path = ../src/Renderer.cpp; sourceTree = SOURCE_ROOT; };
+		5282F6BB0DD7D3FA002FACAD /* SpellSystem.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = SpellSystem.cpp; path = ../src/SpellSystem.cpp; sourceTree = SOURCE_ROOT; };
+		5282F6BC0DD7D3FA002FACAD /* World.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = World.cpp; path = ../src/World.cpp; sourceTree = SOURCE_ROOT; };
+		529DBC040DDA5ABE00EFCACE /* PlayerInfoDisplay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PlayerInfoDisplay.h; path = ../inc/GUI/PlayerInfoDisplay.h; sourceTree = SOURCE_ROOT; };
+		529DBC100DDA5C5400EFCACE /* PlayerInfoDisplay.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PlayerInfoDisplay.cpp; path = ../src/GUI/PlayerInfoDisplay.cpp; sourceTree = SOURCE_ROOT; };
+		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		8D1107320486CEB800E47090 /* Polarity-d.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Polarity-d.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8D11072E0486CEB800E47090 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				002F39FA09D0881F00EBEB88 /* SDL.framework in Frameworks */,
+				002F3C6109D0951E00EBEB88 /* GLUT.framework in Frameworks */,
+				8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */,
+				002F3C0109D093BD00EBEB88 /* OpenGL.framework in Frameworks */,
+				5282F60B0DD7D370002FACAD /* SDL_image.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080E96DDFE201D6D7F000001 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				5282F6180DD7D3C5002FACAD /* guichan */,
+				5282F6100DD7D397002FACAD /* tinyxml */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				8D1107310486CEB800E47090 /* Info.plist */,
+				002F3A2B09D0888800EBEB88 /* SDLMain.h */,
+				002F3A2C09D0888800EBEB88 /* SDLMain.m */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5282F60A0DD7D370002FACAD /* SDL_image.framework */,
+				002F39F909D0881F00EBEB88 /* SDL.framework */,
+				002F3C6009D0951E00EBEB88 /* GLUT.framework */,
+				1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */,
+				002F3C0009D093BD00EBEB88 /* OpenGL.framework */,
+			);
+			name = "Linked Frameworks";
+			sourceTree = "<group>";
+		};
+		1058C7A2FEA54F0111CA2CBB /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				29B97324FDCFA39411CA2CEA /* AppKit.framework */,
+				29B97325FDCFA39411CA2CEA /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8D1107320486CEB800E47090 /* Polarity-d.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* Polarity */ = {
+			isa = PBXGroup;
+			children = (
+				524A24CC0DD9CE03008A1CE2 /* Docs */,
+				080E96DDFE201D6D7F000001 /* Resources */,
+				29B97315FDCFA39411CA2CEA /* Game */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+			);
+			name = Polarity;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Game */ = {
+			isa = PBXGroup;
+			children = (
+				5282F60E0DD7D37B002FACAD /* Inc */,
+				5282F60F0DD7D385002FACAD /* Src */,
+			);
+			name = Game;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */,
+				1058C7A2FEA54F0111CA2CBB /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		524A24CC0DD9CE03008A1CE2 /* Docs */ = {
+			isa = PBXGroup;
+			children = (
+				524A24CD0DD9CE1A008A1CE2 /* GameProposal_Polarity_ShyamGuthikonda.pdf */,
+				524A24CE0DD9CE1A008A1CE2 /* moreIdeas.txt */,
+				524A24CF0DD9CE1A008A1CE2 /* TODO.txt */,
+			);
+			name = Docs;
+			sourceTree = "<group>";
+		};
+		524A24DF0DD9CEDE008A1CE2 /* GUI */ = {
+			isa = PBXGroup;
+			children = (
+				524A25030DDA0D9F008A1CE2 /* GUI.h */,
+				524A25040DDA0D9F008A1CE2 /* Health.h */,
+				524A24E40DD9CFA1008A1CE2 /* ChatDisplay.h */,
+				524A25690DDA14DA008A1CE2 /* InventoryDisplay.h */,
+				529DBC040DDA5ABE00EFCACE /* PlayerInfoDisplay.h */,
+			);
+			name = GUI;
+			sourceTree = "<group>";
+		};
+		524A24E00DD9CF08008A1CE2 /* GUI */ = {
+			isa = PBXGroup;
+			children = (
+				524A256D0DDA15D3008A1CE2 /* InventoryDisplay.cpp */,
+				5282F6AF0DD7D3FA002FACAD /* GUI.cpp */,
+				524A24FC0DDA0CFC008A1CE2 /* ChatDisplay.cpp */,
+				529DBC100DDA5C5400EFCACE /* PlayerInfoDisplay.cpp */,
+			);
+			name = GUI;
+			sourceTree = "<group>";
+		};
+		5282F60E0DD7D37B002FACAD /* Inc */ = {
+			isa = PBXGroup;
+			children = (
+				524A24DF0DD9CEDE008A1CE2 /* GUI */,
+				524A24A20DD9C9F5008A1CE2 /* NPCManager.h */,
+				5282F67C0DD7D3F0002FACAD /* Application.h */,
+				5282F67D0DD7D3F0002FACAD /* Common.h */,
+				5282F67E0DD7D3F0002FACAD /* EntityBase.h */,
+				5282F67F0DD7D3F0002FACAD /* Exception.h */,
+				5282F6800DD7D3F0002FACAD /* Factory.h */,
+				5282F6810DD7D3F0002FACAD /* GestureSystem.h */,
+				5282F6820DD7D3F0002FACAD /* GlobalTimer.h */,
+				5282F6850DD7D3F0002FACAD /* Input.h */,
+				5282F6860DD7D3F0002FACAD /* Inventory.h */,
+				5282F6870DD7D3F0002FACAD /* Item.h */,
+				5282F6890DD7D3F0002FACAD /* ItemManager.h */,
+				5282F68A0DD7D3F0002FACAD /* NPC.h */,
+				5282F68B0DD7D3F0002FACAD /* Player.h */,
+				5282F68C0DD7D3F0002FACAD /* Projectile.h */,
+				5282F68D0DD7D3F0002FACAD /* ProjectileManager.h */,
+				5282F68E0DD7D3F0002FACAD /* Renderer.h */,
+				5282F68F0DD7D3F0002FACAD /* Singleton.h */,
+				5282F6900DD7D3F0002FACAD /* SpellSystem.h */,
+				5282F6910DD7D3F0002FACAD /* Utilities.h */,
+				5282F6920DD7D3F0002FACAD /* World.h */,
+			);
+			name = Inc;
+			sourceTree = "<group>";
+		};
+		5282F60F0DD7D385002FACAD /* Src */ = {
+			isa = PBXGroup;
+			children = (
+				524A24E00DD9CF08008A1CE2 /* GUI */,
+				524A24A40DD9CA05008A1CE2 /* NPCManager.cpp */,
+				5282F6AA0DD7D3FA002FACAD /* Application.cpp */,
+				5282F6AB0DD7D3FA002FACAD /* EntityBase.cpp */,
+				5282F6AC0DD7D3FA002FACAD /* Exception.cpp */,
+				5282F6AD0DD7D3FA002FACAD /* GestureSystem.cpp */,
+				5282F6AE0DD7D3FA002FACAD /* GlobalTimer.cpp */,
+				5282F6B00DD7D3FA002FACAD /* Input.cpp */,
+				5282F6B10DD7D3FA002FACAD /* Inventory.cpp */,
+				5282F6B20DD7D3FA002FACAD /* Item.cpp */,
+				5282F6B40DD7D3FA002FACAD /* ItemManager.cpp */,
+				5282F6B50DD7D3FA002FACAD /* main.cpp */,
+				5282F6B60DD7D3FA002FACAD /* NPC.cpp */,
+				5282F6B70DD7D3FA002FACAD /* Player.cpp */,
+				5282F6B80DD7D3FA002FACAD /* Projectile.cpp */,
+				5282F6B90DD7D3FA002FACAD /* ProjectileManager.cpp */,
+				5282F6BA0DD7D3FA002FACAD /* Renderer.cpp */,
+				5282F6BB0DD7D3FA002FACAD /* SpellSystem.cpp */,
+				5282F6BC0DD7D3FA002FACAD /* World.cpp */,
+			);
+			name = Src;
+			sourceTree = "<group>";
+		};
+		5282F6100DD7D397002FACAD /* tinyxml */ = {
+			isa = PBXGroup;
+			children = (
+				5282F6120DD7D3C1002FACAD /* tinyxml.cpp */,
+				5282F6130DD7D3C1002FACAD /* tinyxmlerror.cpp */,
+				5282F6140DD7D3C1002FACAD /* tinyxmlparser.cpp */,
+			);
+			name = tinyxml;
+			sourceTree = "<group>";
+		};
+		5282F6180DD7D3C5002FACAD /* guichan */ = {
+			isa = PBXGroup;
+			children = (
+				5282F6190DD7D3DB002FACAD /* actionevent.cpp */,
+				5282F61A0DD7D3DB002FACAD /* basiccontainer.cpp */,
+				5282F61B0DD7D3DB002FACAD /* cliprectangle.cpp */,
+				5282F61C0DD7D3DB002FACAD /* color.cpp */,
+				5282F61D0DD7D3DB002FACAD /* defaultfont.cpp */,
+				5282F61E0DD7D3DB002FACAD /* event.cpp */,
+				5282F61F0DD7D3DB002FACAD /* exception.cpp */,
+				5282F6200DD7D3DB002FACAD /* focushandler.cpp */,
+				5282F6210DD7D3DB002FACAD /* font.cpp */,
+				5282F6220DD7D3DB002FACAD /* genericinput.cpp */,
+				5282F6230DD7D3DB002FACAD /* graphics.cpp */,
+				5282F6240DD7D3DB002FACAD /* gui.cpp */,
+				5282F6250DD7D3DB002FACAD /* guichan.cpp */,
+				5282F6260DD7D3DB002FACAD /* image.cpp */,
+				5282F6270DD7D3DB002FACAD /* imagefont.cpp */,
+				5282F6280DD7D3DB002FACAD /* inputevent.cpp */,
+				5282F6290DD7D3DB002FACAD /* key.cpp */,
+				5282F62A0DD7D3DB002FACAD /* keyevent.cpp */,
+				5282F62B0DD7D3DB002FACAD /* keyinput.cpp */,
+				5282F62C0DD7D3DB002FACAD /* mouseevent.cpp */,
+				5282F62D0DD7D3DB002FACAD /* mouseinput.cpp */,
+				5282F62E0DD7D3DB002FACAD /* opengl */,
+				5282F6320DD7D3DB002FACAD /* rectangle.cpp */,
+				5282F6330DD7D3DB002FACAD /* sdl */,
+				5282F6390DD7D3DB002FACAD /* selectionevent.cpp */,
+				5282F63A0DD7D3DB002FACAD /* widget.cpp */,
+				5282F63B0DD7D3DB002FACAD /* widgets */,
+			);
+			name = guichan;
+			sourceTree = "<group>";
+		};
+		5282F62E0DD7D3DB002FACAD /* opengl */ = {
+			isa = PBXGroup;
+			children = (
+				5282F62F0DD7D3DB002FACAD /* opengl.cpp */,
+				5282F6300DD7D3DB002FACAD /* openglgraphics.cpp */,
+				5282F6310DD7D3DB002FACAD /* openglimage.cpp */,
+			);
+			name = opengl;
+			path = ../ext/inc/guichan/src/opengl;
+			sourceTree = SOURCE_ROOT;
+		};
+		5282F6330DD7D3DB002FACAD /* sdl */ = {
+			isa = PBXGroup;
+			children = (
+				5282F6340DD7D3DB002FACAD /* sdl.cpp */,
+				5282F6350DD7D3DB002FACAD /* sdlgraphics.cpp */,
+				5282F6360DD7D3DB002FACAD /* sdlimage.cpp */,
+				5282F6370DD7D3DB002FACAD /* sdlimageloader.cpp */,
+				5282F6380DD7D3DB002FACAD /* sdlinput.cpp */,
+			);
+			name = sdl;
+			path = ../ext/inc/guichan/src/sdl;
+			sourceTree = SOURCE_ROOT;
+		};
+		5282F63B0DD7D3DB002FACAD /* widgets */ = {
+			isa = PBXGroup;
+			children = (
+				5282F63C0DD7D3DB002FACAD /* button.cpp */,
+				5282F63D0DD7D3DB002FACAD /* checkbox.cpp */,
+				5282F63E0DD7D3DB002FACAD /* container.cpp */,
+				5282F63F0DD7D3DB002FACAD /* dropdown.cpp */,
+				5282F6400DD7D3DB002FACAD /* icon.cpp */,
+				5282F6410DD7D3DB002FACAD /* imagebutton.cpp */,
+				5282F6420DD7D3DB002FACAD /* label.cpp */,
+				5282F6430DD7D3DB002FACAD /* listbox.cpp */,
+				5282F6440DD7D3DB002FACAD /* radiobutton.cpp */,
+				5282F6450DD7D3DB002FACAD /* scrollarea.cpp */,
+				5282F6460DD7D3DB002FACAD /* slider.cpp */,
+				5282F6470DD7D3DB002FACAD /* tab.cpp */,
+				5282F6480DD7D3DB002FACAD /* tabbedarea.cpp */,
+				5282F6490DD7D3DB002FACAD /* textbox.cpp */,
+				5282F64A0DD7D3DB002FACAD /* textfield.cpp */,
+				5282F64B0DD7D3DB002FACAD /* window.cpp */,
+			);
+			name = widgets;
+			path = ../ext/inc/guichan/src/widgets;
+			sourceTree = SOURCE_ROOT;
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8D1107260486CEB800E47090 /* Polarity */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "Polarity" */;
+			buildPhases = (
+				8D1107290486CEB800E47090 /* Resources */,
+				8D11072C0486CEB800E47090 /* Sources */,
+				8D11072E0486CEB800E47090 /* Frameworks */,
+				002F39FD09D0883400EBEB88 /* Copy Frameworks into .app bundle */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Polarity;
+			productInstallPath = "$(HOME)/Applications";
+			productName = Polarity;
+			productReference = 8D1107320486CEB800E47090 /* Polarity-d.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "Polarity" */;
+			hasScannedForEncodings = 1;
+			mainGroup = 29B97314FDCFA39411CA2CEA /* Polarity */;
+			projectDirPath = "";
+			targets = (
+				8D1107260486CEB800E47090 /* Polarity */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8D1107290486CEB800E47090 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				524A24D00DD9CE1A008A1CE2 /* GameProposal_Polarity_ShyamGuthikonda.pdf in Resources */,
+				524A24D10DD9CE1A008A1CE2 /* moreIdeas.txt in Resources */,
+				524A24D20DD9CE1A008A1CE2 /* TODO.txt in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8D11072C0486CEB800E47090 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				002F3A2E09D0888800EBEB88 /* SDLMain.m in Sources */,
+				5282F6150DD7D3C1002FACAD /* tinyxml.cpp in Sources */,
+				5282F6160DD7D3C1002FACAD /* tinyxmlerror.cpp in Sources */,
+				5282F6170DD7D3C1002FACAD /* tinyxmlparser.cpp in Sources */,
+				5282F64C0DD7D3DB002FACAD /* actionevent.cpp in Sources */,
+				5282F64D0DD7D3DB002FACAD /* basiccontainer.cpp in Sources */,
+				5282F64E0DD7D3DB002FACAD /* cliprectangle.cpp in Sources */,
+				5282F64F0DD7D3DB002FACAD /* color.cpp in Sources */,
+				5282F6500DD7D3DB002FACAD /* defaultfont.cpp in Sources */,
+				5282F6510DD7D3DB002FACAD /* event.cpp in Sources */,
+				5282F6520DD7D3DB002FACAD /* exception.cpp in Sources */,
+				5282F6530DD7D3DB002FACAD /* focushandler.cpp in Sources */,
+				5282F6540DD7D3DB002FACAD /* font.cpp in Sources */,
+				5282F6550DD7D3DB002FACAD /* genericinput.cpp in Sources */,
+				5282F6560DD7D3DB002FACAD /* graphics.cpp in Sources */,
+				5282F6570DD7D3DB002FACAD /* gui.cpp in Sources */,
+				5282F6580DD7D3DB002FACAD /* guichan.cpp in Sources */,
+				5282F6590DD7D3DB002FACAD /* image.cpp in Sources */,
+				5282F65A0DD7D3DB002FACAD /* imagefont.cpp in Sources */,
+				5282F65B0DD7D3DB002FACAD /* inputevent.cpp in Sources */,
+				5282F65C0DD7D3DB002FACAD /* key.cpp in Sources */,
+				5282F65D0DD7D3DB002FACAD /* keyevent.cpp in Sources */,
+				5282F65E0DD7D3DB002FACAD /* keyinput.cpp in Sources */,
+				5282F65F0DD7D3DB002FACAD /* mouseevent.cpp in Sources */,
+				5282F6600DD7D3DB002FACAD /* mouseinput.cpp in Sources */,
+				5282F6610DD7D3DB002FACAD /* opengl.cpp in Sources */,
+				5282F6620DD7D3DB002FACAD /* openglgraphics.cpp in Sources */,
+				5282F6630DD7D3DB002FACAD /* openglimage.cpp in Sources */,
+				5282F6640DD7D3DB002FACAD /* rectangle.cpp in Sources */,
+				5282F6650DD7D3DB002FACAD /* sdl.cpp in Sources */,
+				5282F6660DD7D3DB002FACAD /* sdlgraphics.cpp in Sources */,
+				5282F6670DD7D3DB002FACAD /* sdlimage.cpp in Sources */,
+				5282F6680DD7D3DB002FACAD /* sdlimageloader.cpp in Sources */,
+				5282F6690DD7D3DB002FACAD /* sdlinput.cpp in Sources */,
+				5282F66A0DD7D3DB002FACAD /* selectionevent.cpp in Sources */,
+				5282F66B0DD7D3DB002FACAD /* widget.cpp in Sources */,
+				5282F66C0DD7D3DB002FACAD /* button.cpp in Sources */,
+				5282F66D0DD7D3DB002FACAD /* checkbox.cpp in Sources */,
+				5282F66E0DD7D3DB002FACAD /* container.cpp in Sources */,
+				5282F66F0DD7D3DB002FACAD /* dropdown.cpp in Sources */,
+				5282F6700DD7D3DB002FACAD /* icon.cpp in Sources */,
+				5282F6710DD7D3DB002FACAD /* imagebutton.cpp in Sources */,
+				5282F6720DD7D3DB002FACAD /* label.cpp in Sources */,
+				5282F6730DD7D3DB002FACAD /* listbox.cpp in Sources */,
+				5282F6740DD7D3DB002FACAD /* radiobutton.cpp in Sources */,
+				5282F6750DD7D3DB002FACAD /* scrollarea.cpp in Sources */,
+				5282F6760DD7D3DB002FACAD /* slider.cpp in Sources */,
+				5282F6770DD7D3DB002FACAD /* tab.cpp in Sources */,
+				5282F6780DD7D3DB002FACAD /* tabbedarea.cpp in Sources */,
+				5282F6790DD7D3DB002FACAD /* textbox.cpp in Sources */,
+				5282F67A0DD7D3DB002FACAD /* textfield.cpp in Sources */,
+				5282F67B0DD7D3DB002FACAD /* window.cpp in Sources */,
+				5282F6BD0DD7D3FA002FACAD /* Application.cpp in Sources */,
+				5282F6BE0DD7D3FA002FACAD /* EntityBase.cpp in Sources */,
+				5282F6BF0DD7D3FA002FACAD /* Exception.cpp in Sources */,
+				5282F6C00DD7D3FA002FACAD /* GestureSystem.cpp in Sources */,
+				5282F6C10DD7D3FA002FACAD /* GlobalTimer.cpp in Sources */,
+				5282F6C20DD7D3FA002FACAD /* GUI.cpp in Sources */,
+				5282F6C30DD7D3FA002FACAD /* Input.cpp in Sources */,
+				5282F6C40DD7D3FA002FACAD /* Inventory.cpp in Sources */,
+				5282F6C50DD7D3FA002FACAD /* Item.cpp in Sources */,
+				5282F6C70DD7D3FA002FACAD /* ItemManager.cpp in Sources */,
+				5282F6C80DD7D3FA002FACAD /* main.cpp in Sources */,
+				5282F6C90DD7D3FA002FACAD /* NPC.cpp in Sources */,
+				5282F6CA0DD7D3FA002FACAD /* Player.cpp in Sources */,
+				5282F6CB0DD7D3FA002FACAD /* Projectile.cpp in Sources */,
+				5282F6CC0DD7D3FA002FACAD /* ProjectileManager.cpp in Sources */,
+				5282F6CD0DD7D3FA002FACAD /* Renderer.cpp in Sources */,
+				5282F6CE0DD7D3FA002FACAD /* SpellSystem.cpp in Sources */,
+				5282F6CF0DD7D3FA002FACAD /* World.cpp in Sources */,
+				524A24A50DD9CA05008A1CE2 /* NPCManager.cpp in Sources */,
+				524A24FD0DDA0CFC008A1CE2 /* ChatDisplay.cpp in Sources */,
+				524A256E0DDA15D3008A1CE2 /* InventoryDisplay.cpp in Sources */,
+				529DBC110DDA5C5400EFCACE /* PlayerInfoDisplay.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		C01FCF4B08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)";
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				HEADER_SEARCH_PATHS = (
+					"$(HOME)/Library/Frameworks/SDL.framework/Headers",
+					/Library/Frameworks/SDL.framework/Headers,
+					"$(HEADER_SEARCH_PATHS)",
+				);
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Applications";
+				OBJROOT = "";
+				PRODUCT_NAME = "Polarity-d";
+				SYMROOT = ../bin;
+				USER_HEADER_SEARCH_PATHS = "../ext/inc/tinyxml ../ext/inc/sdl ../ext/inc/guichan/include";
+				WRAPPER_EXTENSION = app;
+				ZERO_LINK = NO;
+			};
+			name = Debug;
+		};
+		C01FCF4C08A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					ppc,
+					i386,
+				);
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_MODEL_TUNING = G5;
+				HEADER_SEARCH_PATHS = (
+					"$(HOME)/Library/Frameworks/SDL.framework/Headers",
+					/Library/Frameworks/SDL.framework/Headers,
+					"$(HEADER_SEARCH_PATHS)",
+				);
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Applications";
+				OBJROOT = "";
+				PRODUCT_NAME = Polarity;
+				SYMROOT = ../bin;
+				USER_HEADER_SEARCH_PATHS = "../ext/inc/tinyxml ../ext/inc/sdl ../ext/inc/guichan/include";
+				WRAPPER_EXTENSION = app;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(HOME)/Library/Frameworks",
+					/Library/Frameworks,
+					"$(FRAMEWORK_SEARCH_PATHS)",
+				);
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(HOME)/Library/Frameworks/SDL.framework/Headers",
+					/Library/Frameworks/SDL.framework/Headers,
+					"$(HEADER_SEARCH_PATHS)",
+				);
+				PREBINDING = NO;
+				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(HOME)/Library/Frameworks",
+					/Library/Frameworks,
+					"$(FRAMEWORK_SEARCH_PATHS)",
+				);
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(HOME)/Library/Frameworks/SDL.framework/Headers",
+					/Library/Frameworks/SDL.framework/Headers,
+					"$(HEADER_SEARCH_PATHS)",
+				);
+				PREBINDING = NO;
+				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "Polarity" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4B08A954540054247B /* Debug */,
+				C01FCF4C08A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "Polarity" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}

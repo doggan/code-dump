@@ -1,0 +1,182 @@
+<world name="world01" sizeX="11" sizeY="15" tileDimX="32" tileDimY="32">
+	<npc id="1" behavior="stay" x="210" y="60"/>
+	<npc id="1001" behavior="roam" x="200" y="210" x2="150" y2="250" speed="50"/>
+	<npc id="1001" behavior="stay" x="300" y="210"/>
+	<npc id="1002" behavior="stay" x="300" y="110"/>
+	
+	<tile x="0" y="0" base="tiles/wall.png" walkable="0" friction="" />
+	<tile x="0" y="1" base="tiles/wall.png" object="" walkable="0" friction="" />
+	<tile x="0" y="2" base="tiles/wall.png" object="" walkable="0" friction="" />
+	<tile x="0" y="3" base="tiles/wall.png" object="" walkable="0" friction="" />
+	<tile x="0" y="4" base="tiles/wall.png" object="" walkable="0" friction="" />
+	<tile x="0" y="5" base="tiles/wall.png" object="" walkable="0" friction="" />
+	<tile x="0" y="6" base="tiles/wall.png" object="" walkable="0" friction="" />
+	<tile x="0" y="7" base="tiles/water.png" object="" walkable="0" friction="" />
+	<tile x="0" y="8" base="tiles/water.png" object="" walkable="0" friction="" />
+	<tile x="0" y="9" base="tiles/water.png" object="" walkable="0" friction="" />
+	<tile x="0" y="10" base="tiles/water.png" object="" walkable="0" friction="" />
+	<tile x="0" y="11" base="tiles/water.png" object="" walkable="0" friction="" />
+	<tile x="0" y="12" base="tiles/water.png" object="" walkable="0" friction="" />
+	<tile x="0" y="13" base="tiles/water.png" object="" walkable="0" friction="" />
+	<tile x="0" y="14" base="tiles/water.png" object="" walkable="0" friction="" />
+	
+	<tile x="1" y="0" base="tiles/wall.png" object="" walkable="0" friction="" />
+	<tile x="1" y="1" base="tiles/grass.png" object="" walkable="1" friction="" />
+	<tile x="1" y="2" base="tiles/grass.png" object="" walkable="1" friction="" />
+	<tile x="1" y="3" base="tiles/grass.png" object="" walkable="1" friction="" />
+	<tile x="1" y="4" base="tiles/grass.png" object="" walkable="1" friction="" />
+	<tile x="1" y="5" base="tiles/grass.png" object="" walkable="1" friction="" />
+	<tile x="1" y="6" base="tiles/wall.png" object="" walkable="0" friction="" />
+	<tile x="1" y="7" base="tiles/grass.png" object="" walkable="1" friction="" />
+	<tile x="1" y="8" base="tiles/grass.png" object="" walkable="1" friction="" />
+	<tile x="1" y="9" base="tiles/grass.png" object="" walkable="1" friction="" />
+	<tile x="1" y="10" base="tiles/grass.png" fore="tiles/tree_top01.png" object="" walkable="1" friction="" />
+	<tile x="1" y="11" base="tiles/grass.png" object="" walkable="1" friction="" />
+	<tile x="1" y="12" base="tiles/grass.png" object="" walkable="1" friction="" />
+	<tile x="1" y="13" base="tiles/grass.png" object="" walkable="1" friction="" />
+	<tile x="1" y="14" base="tiles/water.png" object="" walkable="0" friction="" />
+	
+	<tile x="2" y="0" base="tiles/wall.png" object="" walkable="0" friction="" />
+	<tile x="2" y="1" base="tiles/grass.png" object="" walkable="1" friction="" />
+	<tile x="2" y="2" base="tiles/grass.png" object="" walkable="1" friction="" />
+	<tile x="2" y="3" base="tiles/grass.png" object="" walkable="1" friction="" />
+	<tile x="2" y="4" base="tiles/grass.png" object="" walkable="1" friction="" />
+	<tile x="2" y="5" base="tiles/grass.png" object="" walkable="1" friction="" />
+	<tile x="2" y="6" base="tiles/grass.png" object="" walkable="1" friction="" />
+	<tile x="2" y="7" base="tiles/grass.png" object="" walkable="1" friction="" />
+	<tile x="2" y="8" base="tiles/grass.png" object="" walkable="1" friction="" />
+	<tile x="2" y="9" base="tiles/grass.png" object="" walkable="1" friction="" />
+	<tile x="2" y="10" base="tiles/grass.png" fringe="tiles/tree_bottom01.png" object="" walkable="0" friction="" />
+	<tile x="2" y="11" base="tiles/grass.png" object="" walkable="1" friction="" />
+	<tile x="2" y="12" base="tiles/grass.png" object="" walkable="1" friction="" />
+	<tile x="2" y="13" base="tiles/grass.png" object="" walkable="1" friction="" />
+	<tile x="2" y="14" base="tiles/water.png" object="" walkable="0" friction="" />
+	
+	<tile x="3" y="0" base="tiles/wall.png" object="" walkable="0" friction="" />
+	<tile x="3" y="1" base="tiles/grass.png" object="" walkable="1" friction="" />
+	<tile x="3" y="2" base="tiles/grass.png" object="" walkable="1" friction="" />
+	<tile x="3" y="3" base="tiles/grass.png" object="" walkable="1" friction="" />
+	<tile x="3" y="4" base="tiles/grass.png" object="" walkable="1" friction="" />
+	<tile x="3" y="5" base="tiles/grass.png" object="" walkable="1" friction="" />
+	<tile x="3" y="6" base="tiles/wall.png" object="" walkable="0" friction="" />
+	<tile x="3" y="7" base="tiles/grass.png" object="" walkable="1" friction="" />
+	<tile x="3" y="8" base="tiles/grass.png" object="" walkable="1" friction="" />
+	<tile x="3" y="9" base="tiles/grass.png" object="" walkable="1" friction="" />
+	<tile x="3" y="10" base="tiles/grass.png" object="" walkable="1" friction="" />
+	<tile x="3" y="11" base="tiles/grass.png" object="" walkable="1" friction="" />
+	<tile x="3" y="12" base="tiles/grass.png" object="" walkable="1" friction="" />
+	<tile x="3" y="13" base="tiles/grass.png" object="" walkable="1" friction="" />
+	<tile x="3" y="14" base="tiles/water.png" object="" walkable="0" friction="" />
+
+	<tile x="4" y="0" base="tiles/wall.png" object="" walkable="0" friction="" />
+	<tile x="4" y="1" base="tiles/grass.png" object="" walkable="1" friction="" />
+	<tile x="4" y="2" base="tiles/grass.png" object="" walkable="1" friction="" />
+	<tile x="4" y="3" base="tiles/grass.png" object="" walkable="1" friction="" />
+	<tile x="4" y="4" base="tiles/grass.png" object="" walkable="1" friction="" />
+	<tile x="4" y="5" base="tiles/grass.png" object="" walkable="1" friction="" />
+	<tile x="4" y="6" base="tiles/wall.png" object="" walkable="0" friction="" />
+	<tile x="4" y="7" base="tiles/grass.png" object="" walkable="1" friction="" />
+	<tile x="4" y="8" base="tiles/grass.png" object="" walkable="1" friction="" />
+	<tile x="4" y="9" base="tiles/grass.png" object="" walkable="1" friction="" />
+	<tile x="4" y="10" base="tiles/grass.png" object="" walkable="1" friction="" />
+	<tile x="4" y="11" base="tiles/grass.png" object="" walkable="1" friction="" />
+	<tile x="4" y="12" base="tiles/grass.png" object="" walkable="1" friction="" />
+	<tile x="4" y="13" base="tiles/grass.png" object="" walkable="1" friction="" />
+	<tile x="4" y="14" base="tiles/water.png" object="" walkable="0" friction="" />
+	
+	<tile x="5" y="0" base="tiles/wall.png" object="" walkable="0" friction="" />
+	<tile x="5" y="1" base="tiles/wall.png" object="" walkable="0" friction="" />
+	<tile x="5" y="2" base="tiles/wall.png" object="" walkable="0" friction="" />
+	<tile x="5" y="3" base="tiles/wall.png" object="" walkable="0" friction="" />
+	<tile x="5" y="4" base="tiles/wall.png" object="" walkable="0" friction="" />
+	<tile x="5" y="5" base="tiles/wall.png" object="" walkable="0" friction="" />
+	<tile x="5" y="6" base="tiles/wall.png" object="" walkable="0" friction="" />
+	<tile x="5" y="7" base="tiles/grass.png" object="" walkable="1" friction="" />
+	<tile x="5" y="8" base="tiles/grass.png" object="" walkable="1" friction="" />
+	<tile x="5" y="9" base="tiles/grass.png" object="" walkable="1" friction="" />
+	<tile x="5" y="10" base="tiles/grass.png" object="" walkable="1" friction="" />
+	<tile x="5" y="11" base="tiles/grass.png" object="" walkable="1" friction="" />
+	<tile x="5" y="12" base="tiles/grass.png" object="" walkable="1" friction="" />
+	<tile x="5" y="13" base="tiles/grass.png" object="" walkable="1" friction="" />
+	<tile x="5" y="14" base="tiles/water.png" object="" walkable="0" friction="" />
+	
+	<tile x="6" y="0" base="tiles/water.png" object="" walkable="0" friction="" />
+	<tile x="6" y="1" base="tiles/grass.png" object="" walkable="1" friction="" />
+	<tile x="6" y="2" base="tiles/grass.png" object="" walkable="1" friction="" />
+	<tile x="6" y="3" base="tiles/grass.png" object="" walkable="1" friction="" />
+	<tile x="6" y="4" base="tiles/grass.png" object="" walkable="1" friction="" />
+	<tile x="6" y="5" base="tiles/grass.png" object="" walkable="1" friction="" />
+	<tile x="6" y="6" base="tiles/grass.png" object="" walkable="1" friction="" />
+	<tile x="6" y="7" base="tiles/grass.png" object="" walkable="1" friction="" />
+	<tile x="6" y="8" base="tiles/grass.png" object="" walkable="1" friction="" />
+	<tile x="6" y="9" base="tiles/grass.png" object="" walkable="1" friction="" />
+	<tile x="6" y="10" base="tiles/grass.png" object="" walkable="1" friction="" />
+	<tile x="6" y="11" base="tiles/grass.png" object="" walkable="1" friction="" />
+	<tile x="6" y="12" base="tiles/grass.png" object="" walkable="1" friction="" />
+	<tile x="6" y="13" base="tiles/grass.png" object="" walkable="1" friction="" />
+	<tile x="6" y="14" base="tiles/water.png" object="" walkable="0" friction="" />
+	
+	<tile x="7" y="0" base="tiles/water.png" object="" walkable="0" friction="" />
+	<tile x="7" y="1" base="tiles/grass.png" object="" walkable="1" friction="" />
+	<tile x="7" y="2" base="tiles/grass.png" object="" walkable="1" friction="" />
+	<tile x="7" y="3" base="tiles/grass.png" object="" walkable="1" friction="" />
+	<tile x="7" y="4" base="tiles/grass.png" object="" walkable="1" friction="" />
+	<tile x="7" y="5" base="tiles/grass.png" object="" walkable="1" friction="" />
+	<tile x="7" y="6" base="tiles/grass.png" object="" walkable="1" friction="" />
+	<tile x="7" y="7" base="tiles/grass.png" object="" walkable="1" friction="" />
+	<tile x="7" y="8" base="tiles/grass.png" object="" walkable="1" friction="" />
+	<tile x="7" y="9" base="tiles/grass.png" object="" walkable="1" friction="" />
+	<tile x="7" y="10" base="tiles/grass.png" object="" walkable="1" friction="" />
+	<tile x="7" y="11" base="tiles/grass.png" object="" walkable="1" friction="" />
+	<tile x="7" y="12" base="tiles/grass.png" object="" walkable="1" friction="" />
+	<tile x="7" y="13" base="tiles/grass.png" object="" walkable="1" friction="" />
+	<tile x="7" y="14" base="tiles/water.png" object="" walkable="0" friction="" />
+	
+	<tile x="8" y="0" base="tiles/water.png" object="" walkable="0" friction="" />
+	<tile x="8" y="1" base="tiles/grass.png" object="" walkable="1" friction="" />
+	<tile x="8" y="2" base="tiles/grass.png" object="" walkable="1" friction="" />
+	<tile x="8" y="3" base="tiles/grass.png" object="" walkable="1" friction="" />
+	<tile x="8" y="4" base="tiles/grass.png" object="" walkable="1" friction="" />
+	<tile x="8" y="5" base="tiles/grass.png" object="" walkable="1" friction="" />
+	<tile x="8" y="6" base="tiles/grass.png" object="" walkable="1" friction="" />
+	<tile x="8" y="7" base="tiles/grass.png" object="" walkable="1" friction="" />
+	<tile x="8" y="8" base="tiles/grass.png" object="" walkable="1" friction="" />
+	<tile x="8" y="9" base="tiles/grass.png" object="" walkable="1" friction="" />
+	<tile x="8" y="10" base="tiles/grass.png" object="" walkable="1" friction="" />
+	<tile x="8" y="11" base="tiles/grass.png" object="" walkable="1" friction="" />
+	<tile x="8" y="12" base="tiles/grass.png" object="" walkable="1" friction="" />
+	<tile x="8" y="13" base="tiles/grass.png" object="" walkable="1" friction="" />
+	<tile x="8" y="14" base="tiles/water.png" object="" walkable="0" friction="" />
+	
+	<tile x="9" y="0" base="tiles/water.png" object="" walkable="0" friction="" />
+	<tile x="9" y="1" base="tiles/grass.png" object="" walkable="1" friction="" />
+	<tile x="9" y="2" base="tiles/grass.png" object="" walkable="1" friction="" />
+	<tile x="9" y="3" base="tiles/grass.png" object="" walkable="1" friction="" />
+	<tile x="9" y="4" base="tiles/grass.png" object="" walkable="1" friction="" />
+	<tile x="9" y="5" base="tiles/grass.png" object="" walkable="1" friction="" />
+	<tile x="9" y="6" base="tiles/grass.png" object="" walkable="1" friction="" />
+	<tile x="9" y="7" base="tiles/grass.png" object="" walkable="1" friction="" />
+	<tile x="9" y="8" base="tiles/grass.png" object="" walkable="1" friction="" />
+	<tile x="9" y="9" base="tiles/grass.png" object="" walkable="1" friction="" />
+	<tile x="9" y="10" base="tiles/grass.png" object="" walkable="1" friction="" />
+	<tile x="9" y="11" base="tiles/grass.png" object="" walkable="1" friction="" />
+	<tile x="9" y="12" base="tiles/grass.png" object="" walkable="1" friction="" />
+	<tile x="9" y="13" base="tiles/grass.png" object="" walkable="1" friction="" />
+	<tile x="9" y="14" base="tiles/water.png" object="" walkable="0" friction="" />
+	
+	<tile x="10" y="0" base="tiles/water.png" object="" walkable="0" friction="" />
+	<tile x="10" y="1" base="tiles/water.png" object="" walkable="0" friction="" />
+	<tile x="10" y="2" base="tiles/water.png" object="" walkable="0" friction="" />
+	<tile x="10" y="3" base="tiles/water.png" object="" walkable="0" friction="" />
+	<tile x="10" y="4" base="tiles/water.png" object="" walkable="0" friction="" />
+	<tile x="10" y="5" base="tiles/water.png" object="" walkable="0" friction="" />
+	<tile x="10" y="6" base="tiles/water.png" object="" walkable="0" friction="" />
+	<tile x="10" y="7" base="tiles/water.png" object="" walkable="0" friction="" />
+	<tile x="10" y="8" base="tiles/water.png" object="" walkable="0" friction="" />
+	<tile x="10" y="9" base="tiles/water.png" object="" walkable="0" friction="" />
+	<tile x="10" y="10" base="tiles/water.png" object="" walkable="0" friction="" />
+	<tile x="10" y="11" base="tiles/water.png" object="" walkable="0" friction="" />
+	<tile x="10" y="12" base="tiles/water.png" object="" walkable="0" friction="" />
+	<tile x="10" y="13" base="tiles/water.png" object="" walkable="0" friction="" />
+	<tile x="10" y="14" base="tiles/water.png" object="" walkable="0" friction="" />
+</world>

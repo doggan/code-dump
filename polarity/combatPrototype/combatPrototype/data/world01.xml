@@ -1,0 +1,10 @@
+<world name="Main World">
+	<tile x="0" y="0" texture="0.png" east="1" west="0" north="0" south="1" combat="combatArea.png">
+		<npc id="0" x="500" y="400" movement="static" />
+	</tile>
+	
+	<tile x="0" y="1" texture="1.png" east="0" west="1" north="0" south="1" combat="combatArea.png" />
+
+	<tile x="1" y="0" texture="2.png" east="1" west="0" north="1" south="0" combat="combatArea.png" />
+	<tile x="1" y="1" texture="3.png" east="0" west="1" north="1" south="0" combat="combatArea.png" />
+</world>

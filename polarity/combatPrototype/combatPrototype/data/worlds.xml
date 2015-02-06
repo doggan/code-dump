@@ -1,0 +1,6 @@
+<npcs file="npcs.xml" />
+<objects file="objects.xml" />
+<loot file="loot.xml" />
+<actions file="actions.xml" />
+
+<world file="world01.xml" />
