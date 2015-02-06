@@ -1,0 +1,33 @@
+// GGE Procedural Clouds Module - material script
+
+vertex_program procClouds_GLSL_VP glsl
+{
+    source procClouds_GLSL.vert
+}
+
+fragment_program procClouds_GLSL_FP glsl
+{
+    source procClouds_GLSL.frag
+
+    default_params
+    {
+        param_named_auto theTime time
+    }
+}
+
+material procCloudMaterial
+{ 
+    technique 
+    {
+        pass 
+        {
+            vertex_program_ref procClouds_GLSL_VP
+            {
+            }
+                        
+            fragment_program_ref procClouds_GLSL_FP
+            {
+            }
+        }
+    }
+}
