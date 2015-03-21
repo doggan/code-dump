@@ -2,8 +2,8 @@ using System;
 
 namespace Hoge
 {
-	class MainClass
-	{
+    class MainClass
+    {
         static void sort(int[] list)
         {
             if (list == null) {
@@ -50,10 +50,10 @@ namespace Hoge
             return max;
         }
 
-		private static int _count = 1;
-		static void runCase(int[] list)
-		{
-			sort(list);
+        private static int _count = 1;
+        static void runCase(int[] list)
+        {
+            sort(list);
 
             bool success = true;
             if (list != null) {
@@ -66,24 +66,24 @@ namespace Hoge
             }
 
             if (success) {
-				Console.WriteLine("{0}: Success!", _count);
-			}
+                Console.WriteLine("{0}: Success!", _count);
+            }
             else {
-				Console.WriteLine("{0}: Failure! {1}", _count, string.Join(",", list));
-			}
-			++_count;
-		}
+                Console.WriteLine("{0}: Failure! {1}", _count, string.Join(",", list));
+            }
+            ++_count;
+        }
 
-		public static void Main (string[] args)
-		{
-			// Driver program.
-			runCase(null);
-			runCase(new int[]{});
-			runCase(new int[]{1, 2, 3});
-			runCase(new int[]{-10, -20, 30});
-			runCase(new int[]{2, 1});
-			runCase(new int[]{3, 2, 4, 1});
-			runCase(new int[]{3, 3, 1, 1, 2});
-		}
-	}
+        public static void Main (string[] args)
+        {
+            // Driver program.
+            runCase(null);
+            runCase(new int[]{});
+            runCase(new int[]{1, 2, 3});
+            runCase(new int[]{-10, -20, 30});
+            runCase(new int[]{2, 1});
+            runCase(new int[]{3, 2, 4, 1});
+            runCase(new int[]{3, 3, 1, 1, 2});
+        }
+    }
 }
