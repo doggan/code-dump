@@ -6,7 +6,7 @@ namespace Hoge
 	{
 		static int search(int[] list, int val)
 		{
-			if (list == null || list.Length == 0) {
+			if (list == null) {
 				return -1;
 			}
 
