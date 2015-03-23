@@ -53,7 +53,7 @@ namespace Hoge
             }
         }
 
-        private static  int _count = 1;
+        private static int _count = 1;
         static void runCase(Func<int, int> func, string valStr, int expected)
         {
             int val = Convert.ToInt32(valStr, 2);
