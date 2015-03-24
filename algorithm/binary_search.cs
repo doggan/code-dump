@@ -37,7 +37,7 @@ namespace Hoge
             return min + (max - min) / 2;
         }
 
-        private static  int _count = 1;
+        private static int _count = 1;
         static void runCase(int[] list, int val, int expected)
         {
             int actual = search(list, val);
