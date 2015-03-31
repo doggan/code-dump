@@ -30,9 +30,9 @@ namespace Hoge
                 return m;
             }
             // Is left side sorted?
-            else if (list[min] < mVal) {
+            else if (list[min] <= mVal) {
                 // Is match within range of left side?
-                if (val >= list[min] && val <= list[m]) {
+                if (val >= list[min] && val < list[m]) {
                     return searchImpl(list, val, min, m - 1);
                 }
                 else {
@@ -42,7 +42,7 @@ namespace Hoge
             // Right side must be sorted.
             else {
                 // Is match within range of right side?
-                if (val >= list[m] && val <= list[max]) {
+                if (val > list[m] && val <= list[max]) {
                     return searchImpl(list, val, m + 1, max);
                 }
                 else {
@@ -68,6 +68,8 @@ namespace Hoge
             // Driver program.
             runCase(null, 1, -1);
             runCase(new int[]{}, 1, -1);
+            runCase(new int[]{1, 2}, 1, 0);
+            runCase(new int[]{2, 1}, 1, 1);
             runCase(new int[]{1, 2, 3}, 1, 0);
             runCase(new int[]{1, 2, 3}, 5, -1);
             runCase(new int[]{3, 1, 2}, 1, 1);
