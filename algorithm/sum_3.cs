@@ -17,14 +17,14 @@ namespace Hoge
                 int r = list.Length - 1;
                 while (l < r) {
                     int sum = list[i] + list[l] + list[r];
-                    if (sum == 0) {
-                        return new int[] { list[i], list[l], list[r] };
-                    }
-                    else if (sum < 0) {
+                    if (sum < 0) {
                         l++;
                     }
-                    else {
+                    else if (sum > 0) {
                         r--;
+                    }
+                    else {
+                        return new int[] { list[i], list[l], list[r] };
                     }
                 }
             }
